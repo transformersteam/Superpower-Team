@@ -8,7 +8,20 @@ namespace Bull.Recycle.Web.Controllers
 {
     public class MainController : Controller
     {
+        /// <summary>
+        /// 首页
+        /// </summary>
+        /// <returns></returns>
         public IActionResult Index()
+        {
+            return View();
+        }
+
+        /// <summary>
+        /// 手机回收
+        /// </summary>
+        /// <returns></returns>
+        public IActionResult Recycle() 
         {
             return View();
         }
