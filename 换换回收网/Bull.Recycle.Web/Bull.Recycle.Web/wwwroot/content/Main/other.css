@@ -1,0 +1,180 @@
+  /* 底部热门评价样式 */
+  .pinpaishoujihuishouleft {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: flex-start;
+  }
+
+  .pinpaishoujihuishouleft .pinpaiitem {
+      display: inline-block;
+      width: 113px;
+      height: 118px;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 3px;
+      margin-bottom: 3px;
+      overflow: hidden;
+      -webkit-filter: grayscale(100%);
+      -moz-filter: grayscale(100%);
+      -ms-filter: grayscale(100%);
+      -o-filter: grayscale(100%);
+      filter: grayscale(100%);
+      filter: gray;
+  }
+
+  .pinpaishoujihuishouleft .pinpaiitem .hov {
+      display: none;
+  }
+
+  .pinpaishoujihuishouleft .pinpaiitem.active {
+      -webkit-filter: none;
+      -moz-filter: none;
+      -ms-filter: none;
+      -o-filter: none;
+      filter: none;
+  }
+
+  .pinpaishoujihuishouleft .pinpaiitem.active .def {
+      display: none;
+  }
+
+  .pinpaishoujihuishouleft .pinpaiitem.active .hov {
+      display: block;
+  }
+
+  .pinpaishoujihuishouleft .pinpaiitem:nth-child(2n) {
+      margin-right: 0;
+  }
+
+  .contentshoppopularreviewsitemtop {
+      display: flex;
+      padding: 0 26px;
+  }
+
+  .pingjiaheadleft {
+      width: 51px;
+      margin-right: 11px;
+  }
+
+  .pingjiaheadleftimg {
+      width: 51px;
+      border-radius: 50%;
+  }
+
+  .pingjiaheadright {
+      padding-top: 5px;
+  }
+
+  .contentshoppopularreviewsitembot .tit {
+      height: 86px;
+      line-height: 30px;
+      font-size: 16px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      line-clamp: 3;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+  }
+
+  .contentshoppopularreviewsitembot .des span {
+      color: #007725 !important;
+  }
+
+  .dayprice-swiper-wrap {
+      width: 956px;
+      flex: none;
+      position: relative;
+  }
+
+  .dayprice-swiper-wrap .dayprice-button-prev,
+  .dayprice-swiper-wrap .dayprice-button-next {
+      width: 32px;
+      height: 21px;
+      line-height: 21px;
+      text-align: center;
+      border: 1px solid #e0e0e0;
+      position: absolute;
+      top: -28px;
+      outline: none;
+      cursor: pointer;
+  }
+
+  .dayprice-swiper-wrap .dayprice-button-prev {
+      right: 31px;
+  }
+
+  .dayprice-swiper-wrap .dayprice-button-next {
+      right: 0;
+  }
+
+  .dayprice-swiper-wrap .swiper-button-disabled {
+      color: #ddd;
+  }
+
+  .swiper-container-hotcomment .swiper-button-prev {
+      background: url('/public/Content/Images/v2/slide_left_icon.png') center no-repeat;
+  }
+
+  .swiper-container-hotcomment .swiper-button-next {
+      background: url('/public/Content/Images/v2/slide_right_icon.png') center no-repeat;
+  }
+
+  .swiper-container-hotcomment .swiper-button-prev,
+  .swiper-container-hotcomment .swiper-button-next {
+      display: none;
+      width: 26px;
+      height: 54px;
+  }
+
+  .swiper-container-hotcomment:hover .swiper-button-prev,
+  .swiper-container-hotcomment:hover .swiper-button-next {
+      display: block;
+  }
+
+  .tonghuoimgwrap {
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+  [v-cloak] {
+      display: none;
+  }
+
+  /* =----- */
+  .mask {
+      position: fixed !important;
+      height: 100%;
+      top: 0 !important;
+      right: 0 !important;
+      bottom: 0 !important;
+      left: 0 !important;
+      z-index: 1001 !important;
+      background: rgba(0, 0, 0, .5) !important;
+  }
+
+  .personActive {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1002;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .personActive .personImg {
+      width: 374px;
+      /* height: 100%; */
+      cursor: pointer;
+  }
+
+  .personActive .closeIcon {
+      width: 37px;
+      height: 37px;
+      margin-top: 30px;
+      cursor: pointer;
+  }
