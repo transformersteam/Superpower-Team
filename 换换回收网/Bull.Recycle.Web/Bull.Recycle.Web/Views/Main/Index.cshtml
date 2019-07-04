@@ -250,20 +250,20 @@
   }
 
     // 埋点
-    // function buriedPointFn() {
-    //     $.ajax({
-    //         url: "/Originable/logs?page_title=手机回收网_专业二手手机回收|数码回收平台-换换回收官网&page_url=" + window.location.href,
-    //         type: 'get',
-    //         success: function (res) {
-    //             // console.log(res)
-    //         }
-    //     })
-    // }
-    // // 首次立马执行，然后三秒轮询
-    // buriedPointFn();
-    // var buriedPointObj = setInterval(() => {
-    //     buriedPointFn();
-    // }, 3000);
+     //function buriedPointFn() {
+     //    $.ajax({
+     //        url: "/Originable/logs?page_title=手机回收网_专业二手手机回收|数码回收平台-换换回收官网&page_url=" + window.location.href,
+     //        type: 'get',
+     //        success: function (res) {
+     //            // console.log(res)
+     //        }
+     //    })
+     //}
+     //// 首次立马执行，然后三秒轮询
+     //buriedPointFn();
+     //var buriedPointObj = setInterval(() => {
+     //    buriedPointFn();
+     //}, 3000);
     </script>
     <link href="~/content/Main/layer.css" rel="stylesheet" />
     <script src="~/content/Main/zh_cn.js"></script>
@@ -1816,6 +1816,25 @@
         <script src="~/content/Main/jquery.cookie(1).js"></script>
         <script src="~/content/Main/cityjson"></script>
         <script>
+            var vm = new Vue({
+                el: "#index_page",
+                data: {
+                    recycletype:[],
+                },
+                mounted() {
+                    this.getRecycleType();
+                },
+                methods: {
+                    getRecycleType: async function () {
+                        axios.get("@Url.Action("GetRecycleType","Main")").then(
+                            (response) => {
+                                this.recycletype = response.data;
+                            }
+                        )
+                    }
+                }
+            })
+
             $(function () {
                 var djs = $('#daojishi');
                 var djsday = $('#daojishidata');
@@ -1871,7 +1890,8 @@
                         prevEl: '.dayprice-button-next',
                     },
                 })
-            });</script>
+            });    
+        </script>
 
         <!--
         <script type="text/javascript">
@@ -1949,12 +1969,7 @@
                 window.history.pushState('forward', null, '#'); //在IE中必须得有这两行
                 window.history.forward(1);
               }
-
-
-
             }
-
-
           };
 
           Recode.initialize();
