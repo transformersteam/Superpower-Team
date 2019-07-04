@@ -1828,6 +1828,7 @@
                     getRecycleType: async function () {
                         axios.get("@Url.Action("GetRecycleType","Main")").then(
                             (response) => {
+                                alert(JSON.stringify(response.data));
                                 this.recycletype = response.data;
                             }
                         )

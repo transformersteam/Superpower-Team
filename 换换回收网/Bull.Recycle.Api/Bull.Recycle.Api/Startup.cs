@@ -3,7 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Bull.Recycle.IRepository.IGoodRepository;
+using Bull.Recycle.IRepository.IGoodTypeRepository;
+using Bull.Recycle.IRepository.IRecycleTypeRepository;
 using Bull.Recycle.Repository.GoodRepository;
+using Bull.Recycle.Repository.GoodTypeRepository;
+using Bull.Recycle.Repository.RecycleTypeRepository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -31,6 +35,8 @@ namespace Bull.Recycle.Api
 
             // 注册接口和实现类的映射关系 
             services.AddScoped<IGoodRepository, GoodRepository>();
+            services.AddScoped<IGoodTypeRepository, GoodTypeRepository>();
+            services.AddScoped<IRecycleTypeRepository, RecycleTypeRepository>();
 
             //注册跨域服务，允许所有来源
             services.AddCors(options =>

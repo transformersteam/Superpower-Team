@@ -24,7 +24,7 @@ namespace Bull.Recycle.Api.Controllers.RecycleTypeControllers
         /// 获取回收类型列表
         /// </summary>
         /// <returns></returns>
-        [HttpGet]
+        [HttpGet("GetRecycleTypeList")]
         public List<RecycleType> GetRecycleTypeList()
         {
             var list = iRecycleTypeRepository.GetRecycleTypeList();

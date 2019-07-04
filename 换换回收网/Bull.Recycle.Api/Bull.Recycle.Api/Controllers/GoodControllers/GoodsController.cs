@@ -24,7 +24,7 @@ namespace Bull.Recycle.Api.Controllers.GoodControllers
         /// 获取商品列表
         /// </summary>
         /// <returns></returns>
-        [HttpGet]
+        [HttpGet("GetGoodsList")]
         public List<Goods> GetGoodsList()
         {
             var list = iGoodRepository.GetGoodsList();
