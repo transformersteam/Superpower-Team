@@ -32,6 +32,7 @@
     <script src="~/content/Main/hm(1).js"></script>
     <script src="~/content/Main/jquery.js"></script>
     <script src="~/content/Main/jquery.cookie.js"></script>
+    <script src="~/js/vue.js"></script>
     <style>
 
         [v-cloak] {
@@ -250,20 +251,20 @@
   }
 
     // 埋点
-    // function buriedPointFn() {
-    //     $.ajax({
-    //         url: "/Originable/logs?page_title=手机回收网_专业二手手机回收|数码回收平台-换换回收官网&page_url=" + window.location.href,
-    //         type: 'get',
-    //         success: function (res) {
-    //             // console.log(res)
-    //         }
-    //     })
-    // }
-    // // 首次立马执行，然后三秒轮询
-    // buriedPointFn();
-    // var buriedPointObj = setInterval(() => {
-    //     buriedPointFn();
-    // }, 3000);
+     //function buriedPointFn() {
+     //    $.ajax({
+     //        url: "/Originable/logs?page_title=手机回收网_专业二手手机回收|数码回收平台-换换回收官网&page_url=" + window.location.href,
+     //        type: 'get',
+     //        success: function (res) {
+     //            // console.log(res)
+     //        }
+     //    })
+     //}
+     //// 首次立马执行，然后三秒轮询
+     //buriedPointFn();
+     //var buriedPointObj = setInterval(() => {
+     //    buriedPointFn();
+     //}, 3000);
     </script>
     <link href="~/content/Main/layer.css" rel="stylesheet" />
     <script src="~/content/Main/zh_cn.js"></script>
@@ -465,8 +466,630 @@
         <!-- end -->
         <link href="~/content/Main/other.css" rel="stylesheet" />
 
-        <div id="index_page" class="contentwrap">
-            <div class="contentbannerwrap"><div class="appwrap"><div class="contentbannerbox"><div id="j-swiper-container-banner" class="swiper-container swiper-container-horizontal"><div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);"><div class="swiper-slide swiper-slide-active" style="width: 1200px;"><a href="https://www.huanhuanhuishou.com/Activity/high" alt="旧机高价卖"><img src="~/content/Main/1d2d5562511f2953387646642d47f6e7.png"></a></div></div> <div class="swiper-pagination"></div><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div></div> <div class="contentnavwrap"><ul class="contentnavul"><li><a href="https://www.huanhuanhuishou.com/a4.html"><span>手机回收</span><i><img src="~/content/Main/index_icon_contentnavul.png" alt=""></i></a> <div class="contentnavpanel"><div class="contentnavpanell"> <a href="https://www.huanhuanhuishou.com/a4.html" style="color: rgb(153, 153, 153);">更多&gt;</a></div> <!----></div></li> <li><a href="https://www.huanhuanhuishou.com/a5.html"><span>全新机回收</span><i><img src="~/content/Main/index_icon_contentnavul.png" alt=""></i></a> <div class="contentnavpanel"><div class="contentnavpanell"> <a href="https://www.huanhuanhuishou.com/a5.html" style="color: rgb(153, 153, 153);">更多&gt;</a></div> <!----></div></li> <li><a href="https://www.huanhuanhuishou.com/b4/309.html"><span>苹果手机回收</span><i><img src="~/content/Main/index_icon_contentnavul.png" alt=""></i></a> <div class="contentnavpanel"><div class="contentnavpanell"> <a href="https://www.huanhuanhuishou.com/b4/309.html" style="color: rgb(153, 153, 153);">更多&gt;</a></div> <!----></div></li> <li><a href="https://www.huanhuanhuishou.com/a4.html"><span>国产手机回收</span><i><img src="~/content/Main/index_icon_contentnavul.png" alt=""></i></a> <div class="contentnavpanel"><div class="contentnavpanell"> <a href="https://www.huanhuanhuishou.com/a4.html" style="color: rgb(153, 153, 153);">更多&gt;</a></div> <!----></div></li> <li><a href="https://www.huanhuanhuishou.com/a2.html"><span>平板回收</span><i><img src="~/content/Main/index_icon_contentnavul.png" alt=""></i></a> <div class="contentnavpanel"><div class="contentnavpanell"> <a href="https://www.huanhuanhuishou.com/a2.html" style="color: rgb(153, 153, 153);">更多&gt;</a></div> <!----></div></li> <li><a href="https://www.huanhuanhuishou.com/a1.html"><span>笔记本回收</span><i><img src="~/content/Main/index_icon_contentnavul.png" alt=""></i></a> <div class="contentnavpanel"><div class="contentnavpanell"> <a href="https://www.huanhuanhuishou.com/a1.html" style="color: rgb(153, 153, 153);">更多&gt;</a></div> <!----></div></li> <li><a href="https://www.huanhuanhuishou.com/a3.html"><span>数码回收</span><i><img src="~/content/Main/index_icon_contentnavul.png" alt=""></i></a> <div class="contentnavpanel"><div class="contentnavpanell"> <a href="https://www.huanhuanhuishou.com/a3.html" style="color: rgb(153, 153, 153);">更多&gt;</a></div> <!----></div></li></ul></div></div></div> <div class="contentbillboardswrap"><div class="appwrap"><div class="contentbillboardscen"><a href="https://www.huanhuanhuishou.com/app.html"><img src="~/content/Main/contentBillboards_img1.jpg" alt=""></a> <a href="https://www.huanhuanhuishou.com/a4.html"><p class="contentbillboardscentit"></p> <p class="contentbillboardscendes"></p> <img src="~/content/Main/contentBillboards_img2.png" alt=""></a> <a href="https://www.huanhuanhuishou.com/a1.html"><p class="contentbillboardscentit"></p> <p class="contentbillboardscendes"></p> <img src="~/content/Main/abbc977f678f4a78301a26422ca29331.png" alt=""></a> <a href="https://www.huanhuanhuishou.com/a2.html"><p class="contentbillboardscentit"></p> <p class="contentbillboardscendes"></p> <img src="~/content/Main/1bf15abd760fac8fd18473234c5e8247.png" alt=""></a></div></div></div> <div class="contentadvertisingwrap"><div class="appwrap"><div class="canpointer togglecommondiv"><a href="https://www.huanhuanhuishou.com/Activity/indexActive1"><img src="~/content/Main/advertising_icon1.png" alt="" class="togglecommondivdefe"> <img src="~/content/Main/advertising_icon1_hov.png" alt="" class="togglecommondivhove"> <p>免费评估</p></a></div> <div><img src="~/content/Main/advertising_icon0.png" alt=""></div> <div class="openVideoFn canpointer togglecommondiv"><a href="javascript:;"><img src="~/content/Main/advertising_icon2.png" alt="" class="togglecommondivdefe"> <img src="~/content/Main/advertising_icon2_hov.png" alt="" class="togglecommondivhove"> <p>AI视频定价</p></a></div> <div><img src="~/content/Main/advertising_icon0.png" alt=""></div> <div class="canpointer togglecommondiv"><a href="https://www.huanhuanhuishou.com/Activity/indexActive2"><img src="~/content/Main/advertising_icon3.png" alt="" class="togglecommondivdefe"> <img src="~/content/Main/advertising_icon3_hov.png" alt="" class="togglecommondivhove"> <p>极速打款</p></a></div> <div><img src="~/content/Main/advertising_icon0.png" alt=""></div> <div class="canpointer togglecommondiv"><a href="https://www.huanhuanhuishou.com/Activity/indexActive3"><img src="~/content/Main/advertising_icon4.png" alt="" class="togglecommondivdefe"> <img src="~/content/Main/advertising_icon4_hov.png" alt="" class="togglecommondivhove"> <p>顺丰上门，免费邮寄</p></a></div></div></div> <div class="contenttodayhotshopwrap" style="display: none;">
+        <div id="app" class="contentwrap">
+            <div class="contentbannerwrap">
+                <div class="appwrap">
+                    <div class="contentbannerbox">
+                        <div id="j-swiper-container-banner" class="swiper-container swiper-container-horizontal">
+                            <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
+                                <div class="swiper-slide swiper-slide-active" style="width: 1200px;">
+                                    <a href="https://www.huanhuanhuishou.com/Activity/high" alt="旧机高价卖">
+                                        <img src="~/content/Main/1d2d5562511f2953387646642d47f6e7.png">
+                                    </a>
+                                </div>
+                            </div> 
+                            <div class="swiper-pagination"></div>
+                            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                        </div>
+                    </div> 
+                    <div class="contentnavwrap">
+                        <ul class="contentnavul">
+                            <li v-for="(data,key,index) in recycletype">
+                                <a href="https://www.huanhuanhuishou.com/a4.html" :id=data.id v-on:mouseover="getType(data.id)">
+                                    <span>{{data.recycleTypeName}}回收</span>
+                                    <i><img src="~/content/Main/index_icon_contentnavul.png" alt=""></i>
+                                </a> 
+                                <div class="contentnavpanel">
+                                    <div class="contentnavpanell">
+                                        <a href="/b4/309.html" class="singleline active" v-for="data in goodtype" v-on:mouseover="getGood(data.id)">{{data.goodsTypeName}}</a>
+                                        <a href="https://www.huanhuanhuishou.com/a4.html" style="color: rgb(153, 153, 153);">更多&gt;</a>
+                                    </div>
+                                    <div class="contentnavpanelr">
+                                        <a href="/gujia/23311.html" title="苹果 iPhone XS Max" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/7cb1c9186673dce978848925626a7dd6.png" alt="苹果 iPhone XS Max" style="width: 40px;">
+                                            <span>苹果 iPhone XS Max</span>
+                                        </a>
+                                        <a href="/gujia/52.html" title="苹果 iPhone 6S" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/8ab63d34885befad0a20dda7d3ea7a6e.png" alt="苹果 iPhone 6S" style="width: 40px;">
+                                            <span>苹果 iPhone 6S</span>
+                                        </a>
+                                        <a href="/gujia/47.html" title="苹果 iPhone X" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/98e9b732e761953cdf5490b7e44f2546.png" alt="苹果 iPhone X" style="width: 40px;">
+                                            <span>苹果 iPhone X</span>
+                                        </a>
+                                        <a href="/gujia/55.html" title="苹果 iPhone8 Plus" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/839453d9f96d449769e9eed58be26074.png" alt="苹果 iPhone8 Plus" style="width: 40px;">
+                                            <span>苹果 iPhone8 Plus</span>
+                                        </a>
+                                        <a href="/gujia/51.html" title="苹果 iPhone 6" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/e4f0895ec567e18d894dfdab48fd1dfb.png" alt="苹果 iPhone 6" style="width: 40px;">
+                                            <span>苹果 iPhone 6</span>
+                                        </a>
+                                        <a href="/gujia/23310.html" title="苹果 iPhone XS" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/d02977b18787fb3844cfb3bee8455a4d.png" alt="苹果 iPhone XS" style="width: 40px;">
+                                            <span>苹果 iPhone XS</span>
+                                        </a>
+                                        <a href="/gujia/23388.html" title="苹果iPhoneXR" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/f422ec8d2f6fd6017f7d843cf72c7ee3.png" alt="苹果iPhoneXR" style="width: 40px;">
+                                            <span>苹果iPhoneXR</span>
+                                        </a>
+                                        <a href="/gujia/54.html" title="苹果 iPhone 8" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/2e53af3ca86e509c802ca1a9906a89c4.png" alt="苹果 iPhone 8" style="width: 40px;">
+                                            <span>苹果 iPhone 8</span>
+                                        </a>
+                                        <a href="/gujia/48.html" title="苹果 iPhone 7 Plus" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/d681fc317541595e9041a3a41d45ba5f.jpg" alt="苹果 iPhone 7 Plus" style="width: 40px;">
+                                            <span>苹果 iPhone 7 Plus</span>
+                                        </a>
+                                        <a href="/gujia/49.html" title="苹果 iPhone 7" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/022b4f39820da4c797f1660717adbd34.png" alt="苹果 iPhone 7" style="width: 40px;">
+                                            <span>苹果 iPhone 7</span>
+                                        </a>
+                                        <a href="/gujia/50.html" title="苹果 iPhone 6 Plus" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/0546083a5f56c0491707919aeaa8b73a.png" alt="苹果 iPhone 6 Plus" style="width: 40px;">
+                                            <span>苹果 iPhone 6 Plus</span>
+                                        </a>
+                                        <a href="/gujia/56.html" title="苹果 iPhone 5S" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/6af8cf9c9b8527b26767803dcfc61bfa.jpg" alt="苹果 iPhone 5S" style="width: 40px;">
+                                            <span>苹果 iPhone 5S</span>
+                                        </a>
+                                        <a href="/gujia/53.html" title="苹果 iPhone6S Plus" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/d618c1618a3abda0ccf3382bec32a370.png" alt="苹果 iPhone6S Plus" style="width: 40px;">
+                                            <span>苹果 iPhone6S Plus</span>
+                                        </a>
+                                        <a href="/gujia/57.html" title="苹果 iPhone SE" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/88b5fb6fff6963dbfa940ccd85de85ae.png" alt="苹果 iPhone SE" style="width: 40px;">
+                                            <span>苹果 iPhone SE</span>
+                                        </a>
+                                        <a href="/gujia/61.html" title="苹果iPhone4" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/7ce6403d7b3b5389be6edddb829e7cbd.png" alt="苹果iPhone4" style="width: 40px;">
+                                            <span>苹果iPhone4</span>
+                                        </a>
+                                        <a href="/gujia/60.html" title="苹果 iPhone 5C" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/78289af756c40abbdeeb6ec3998934c0.jpg" alt="苹果 iPhone 5C" style="width: 40px;">
+                                            <span>苹果 iPhone 5C</span>
+                                        </a>
+                                        <a href="/gujia/58.html" title="苹果 iPhone 5" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/a89491c6db1c6cdf77048f2cd510ed6f.jpg" alt="苹果 iPhone 5" style="width: 40px;">
+                                            <span>苹果 iPhone 5</span>
+                                        </a> 
+                                        <a href="/b4/309.html" class="morephone">
+                                            <span>
+                                                更多机型
+                                                &gt;
+                                            </span>
+                                        </a>
+                                    </div> 
+                         <!----></div>
+                            </li> 
+                            @*<li>
+                                <a href="https://www.huanhuanhuishou.com/a5.html">
+                                    <span>全新机回收</span>
+                                    <i><img src="~/content/Main/index_icon_contentnavul.png" alt=""></i>
+                                </a>
+                                <div class="contentnavpanel">
+                                    <div class="contentnavpanell">
+                                        <a href="/b5/353.html" class="singleline">华为</a>
+                                        <a href="/b5/349.html" class="singleline active">苹果</a>
+                                        <a href="/b5/351.html" class="singleline">三星</a>
+                                        <a href="/b5/352.html" class="singleline">小米</a>
+                                        <a href="/b5/357.html" class="singleline">VIVO</a>
+                                        <a href="/b5/356.html" class="singleline">OPPO</a>
+                                        <a href="/b5/379.html" class="singleline">美图</a>
+                                        <a href="https://www.huanhuanhuishou.com/a5.html" style="color: rgb(153, 153, 153);">更多&gt;</a>
+                                    </div>
+                                    <div class="contentnavpanelr">
+                                        <a href="/gujia/23171.html" title="全新机苹果 iPhone X" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/9b31a6a8c277cc634ce33e9f452bb672.jpg" alt="全新机苹果 iPhone X" style="width: 40px;">
+                                            <span>全新机苹果 iPhone X</span>
+                                        </a>
+                                        <a href="/gujia/23179.html" title="全新机 苹果 iPhone8 Plus" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/9e8924d97a860f6284879517ea6a9524.jpg" alt="全新机 苹果 iPhone8 Plus" style="width: 40px;">
+                                            <span>全新机 苹果 iPhone8 Plus</span>
+                                        </a>
+                                        <a href="/gujia/23175.html" title="全新机 苹果 iPhone 7 Plus" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/0eec087deecf1e6b0d59d1e1c7197543.jpg" alt="全新机 苹果 iPhone 7 Plus" style="width: 40px;">
+                                            <span>全新机 苹果 iPhone 7 Plus</span>
+                                        </a>
+                                        <a href="/gujia/23176.html" title="全新机 苹果 iPhone6S Plus" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/415aa141f14df0f3c98c82c3879b4d95.jpg" alt="全新机 苹果 iPhone6S Plus" style="width: 40px;">
+                                            <span>全新机 苹果 iPhone6S Plus</span>
+                                        </a>
+                                        <a href="/gujia/23178.html" title="全新机 苹果 iPhone7" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/79e6b4243e2fde776dfd5e547b5d5a0b.jpg" alt="全新机 苹果 iPhone7" style="width: 40px;">
+                                            <span>全新机 苹果 iPhone7</span>
+                                        </a>
+                                        <a href="/gujia/23180.html" title="全新机苹果iPhone6S" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/e5500db8bdd60733a54baf3b8a6a9aca.jpg" alt="全新机苹果iPhone6S" style="width: 40px;">
+                                            <span>全新机苹果iPhone6S</span>
+                                        </a>
+                                        <a href="/gujia/23181.html" title="全新机 苹果 iPhone8" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/22b92a5b2cd8abdf3a18587a13ea26c5.jpg" alt="全新机 苹果 iPhone8" style="width: 40px;">
+                                            <span>全新机 苹果 iPhone8</span>
+                                        </a>
+                                        <a href="/gujia/24769.html" title="全新机 苹果 iPhone XR" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/d82e8af1a168710ec3e7a7650501d6e9.png" alt="全新机 苹果 iPhone XR" style="width: 40px;">
+                                            <span>全新机 苹果 iPhone XR</span>
+                                        </a> 
+                                        <a href="/b5/349.html" class="morephone">
+                                            <span>更多机型</span>
+                                    &gt;</a>
+                                    </div> <!---->
+                                </div>
+                            </li> 
+                            <li>
+                                <a href="https://www.huanhuanhuishou.com/b4/309.html">
+                                    <span>苹果手机回收</span>
+                                    <i><img src="~/content/Main/index_icon_contentnavul.png" alt=""></i>
+                                </a> 
+                                <div class="contentnavpanel">
+                                    <div class="contentnavpanell"> 
+                                        <a href="https://www.huanhuanhuishou.com/b4/309.html" style="color: rgb(153, 153, 153);">更多&gt;</a>
+                                    </div>
+                                    <div class="contentnavpanelr">
+                                        <a href="/gujia/23311.html" title="苹果 iPhone XS Max" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/7cb1c9186673dce978848925626a7dd6.png" alt="苹果 iPhone XS Max" style="width: 40px;">
+                                            <span>苹果 iPhone XS Max</span>
+                                        </a>
+                                        <a href="/gujia/52.html" title="苹果 iPhone 6S" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/8ab63d34885befad0a20dda7d3ea7a6e.png" alt="苹果 iPhone 6S" style="width: 40px;">
+                                            <span>苹果 iPhone 6S</span>
+                                        </a>
+                                        <a href="/gujia/47.html" title="苹果 iPhone X" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/98e9b732e761953cdf5490b7e44f2546.png" alt="苹果 iPhone X" style="width: 40px;">
+                                            <span>苹果 iPhone X</span>
+                                        </a>
+                                        <a href="/gujia/55.html" title="苹果 iPhone8 Plus" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/839453d9f96d449769e9eed58be26074.png" alt="苹果 iPhone8 Plus" style="width: 40px;">
+                                            <span>苹果 iPhone8 Plus</span>
+                                        </a>
+                                        <a href="/gujia/51.html" title="苹果 iPhone 6" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/e4f0895ec567e18d894dfdab48fd1dfb.png" alt="苹果 iPhone 6" style="width: 40px;">
+                                            <span>苹果 iPhone 6</span>
+                                        </a>
+                                        <a href="/gujia/23310.html" title="苹果 iPhone XS" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/d02977b18787fb3844cfb3bee8455a4d.png" alt="苹果 iPhone XS" style="width: 40px;">
+                                            <span>苹果 iPhone XS</span>
+                                        </a>
+                                        <a href="/gujia/23388.html" title="苹果iPhoneXR" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/f422ec8d2f6fd6017f7d843cf72c7ee3.png" alt="苹果iPhoneXR" style="width: 40px;">
+                                            <span>苹果iPhoneXR</span>
+                                        </a>
+                                        <a href="/gujia/54.html" title="苹果 iPhone 8" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/2e53af3ca86e509c802ca1a9906a89c4.png" alt="苹果 iPhone 8" style="width: 40px;">
+                                            <span>苹果 iPhone 8</span>
+                                        </a>
+                                        <a href="/gujia/48.html" title="苹果 iPhone 7 Plus" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/d681fc317541595e9041a3a41d45ba5f.jpg" alt="苹果 iPhone 7 Plus" style="width: 40px;">
+                                            <span>苹果 iPhone 7 Plus</span>
+                                        </a>
+                                        <a href="/gujia/49.html" title="苹果 iPhone 7" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/022b4f39820da4c797f1660717adbd34.png" alt="苹果 iPhone 7" style="width: 40px;">
+                                            <span>苹果 iPhone 7</span>
+                                        </a>
+                                        <a href="/gujia/50.html" title="苹果 iPhone 6 Plus" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/0546083a5f56c0491707919aeaa8b73a.png" alt="苹果 iPhone 6 Plus" style="width: 40px;">
+                                            <span>苹果 iPhone 6 Plus</span>
+                                        </a>
+                                        <a href="/gujia/56.html" title="苹果 iPhone 5S" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/6af8cf9c9b8527b26767803dcfc61bfa.jpg" alt="苹果 iPhone 5S" style="width: 40px;">
+                                            <span>苹果 iPhone 5S</span>
+                                        </a>
+                                        <a href="/gujia/53.html" title="苹果 iPhone6S Plus" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/d618c1618a3abda0ccf3382bec32a370.png" alt="苹果 iPhone6S Plus" style="width: 40px;">
+                                            <span>苹果 iPhone6S Plus</span>
+                                        </a>
+                                        <a href="/gujia/57.html" title="苹果 iPhone SE" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/88b5fb6fff6963dbfa940ccd85de85ae.png" alt="苹果 iPhone SE" style="width: 40px;">
+                                            <span>苹果 iPhone SE</span>
+                                        </a>
+                                        <a href="/gujia/61.html" title="苹果iPhone4" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/7ce6403d7b3b5389be6edddb829e7cbd.png" alt="苹果iPhone4" style="width: 40px;">
+                                            <span>苹果iPhone4</span>
+                                        </a>
+                                        <a href="/gujia/60.html" title="苹果 iPhone 5C" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/78289af756c40abbdeeb6ec3998934c0.jpg" alt="苹果 iPhone 5C" style="width: 40px;">
+                                            <span>苹果 iPhone 5C</span>
+                                        </a>
+                                        <a href="/gujia/58.html" title="苹果 iPhone 5" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/a89491c6db1c6cdf77048f2cd510ed6f.jpg" alt="苹果 iPhone 5" style="width: 40px;">
+                                            <span>苹果 iPhone 5</span>
+                                        </a> 
+                                        <a href="/b4/309.html" class="morephone">
+                                            <span>
+                                                更多机型
+                                                &gt;
+                                            </span>
+                                        </a>
+                                    </div> 
+                         <!----></div>
+                            </li> 
+                            <li>
+                                <a href="https://www.huanhuanhuishou.com/a4.html">
+                                    <span>国产手机回收</span>
+                                    <i><img src="~/content/Main/index_icon_contentnavul.png" alt=""></i>
+                                </a> 
+                                <div class="contentnavpanel">
+                                    <div class="contentnavpanell">
+                                        <a href="/b4/312.html" class="singleline active">华为</a>
+                                        <a href="/b4/311.html" class="singleline">小米</a>
+                                        <a href="/b4/316.html" class="singleline">vivo</a>
+                                        <a href="/b4/313.html" class="singleline">荣耀</a>
+                                        <a href="/b4/317.html" class="singleline">乐视</a>
+                                        <a href="/b4/318.html" class="singleline">锤子</a>
+                                        <a href="/b4/319.html" class="singleline">金立</a> 
+                                        <a href="https://www.huanhuanhuishou.com/a4.html" style="color: rgb(153, 153, 153);">更多&gt;</a>
+                                    </div>
+                                    <div class="contentnavpanelr">
+                                        <a href="/gujia/707.html" title="华为P10" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/c6f23bee4ab1bcda8460d6dec4ddca0a.jpg" alt="华为P10" style="width: 40px;">
+                                            <span>华为P10</span>
+                                        </a>
+                                        <a href="/gujia/714.html" title="华为P20Pro" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/5ea45fe3ec560b3002d0169a50b27633.jpg" alt="华为P20Pro" style="width: 40px;">
+                                            <span>华为P20Pro</span>
+                                        </a>
+                                        <a href="/gujia/713.html" title="华为Mate10" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/2f839c4cbdd13135fabb1dcce6c2eea4.jpg" alt="华为Mate10" style="width: 40px;">
+                                            <span>华为Mate10</span>
+                                        </a>
+                                        <a href="/gujia/21859.html" title="华为 nova 3" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/1eebc55a0bf61e951c6069b35993e2be.jpg" alt="华为 nova 3" style="width: 40px;">
+                                            <span>华为 nova 3</span>
+                                        </a>
+                                        <a href="/gujia/24338.html" title="华为 Mate 20 RS保时捷版" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/e8ef9cdaf6d40a88edbc89a0450da81d.png" alt="华为 Mate 20 RS保时捷版" style="width: 40px;">
+                                            <span>华为 Mate 20 RS保时捷版</span>
+                                        </a>
+                                        <a href="/gujia/741.html" title="华为MateRS保时捷设计" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/65535d840436b7eee10033fb56e4bb83.jpg" alt="华为MateRS保时捷设计" style="width: 40px;">
+                                            <span>华为MateRS保时捷设计</span>
+                                        </a>
+                                        <a href="/gujia/716.html" title="华为P20" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/1f526a76bd9fed59c68de396c62b0d03.jpg" alt="华为P20" style="width: 40px;">
+                                            <span>华为P20</span>
+                                        </a>
+                                        <a href="/gujia/710.html" title="华为Mate9" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/5e661d2a57dd0d6087238896cbcef10e.jpg" alt="华为Mate9" style="width: 40px;">
+                                            <span>华为Mate9</span>
+                                        </a>
+                                        <a href="/gujia/708.html" title="华为Mate10Pro" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/dee514f48e28d0d4bd4256660665effe.jpg" alt="华为Mate10Pro" style="width: 40px;">
+                                            <span>华为Mate10Pro</span>
+                                        </a>
+                                        <a href="/gujia/23313.html" title="华为 麦芒7" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/4a398f13945ca71bd6d3d9ad8c2bbe01.jpg" alt="华为 麦芒7" style="width: 40px;">
+                                            <span>华为 麦芒7</span>
+                                        </a>
+                                        <a href="/gujia/709.html" title="华为P9" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/70ddeff9199ec0ea0ea205995d905a16.jpg" alt="华为P9" style="width: 40px;">
+                                            <span>华为P9</span>
+                                        </a>
+                                        <a href="/gujia/711.html" title="华为P10Plus" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/6fc2388474b9c8c31e7d3c029b4d80c9.jpg" alt="华为P10Plus" style="width: 40px;">
+                                            <span>华为P10Plus</span>
+                                        </a>
+                                        <a href="/gujia/712.html" title="华为Mate8" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/d8b7e61797c4f782f225d731dbde54bc.jpg" alt="华为Mate8" style="width: 40px;">
+                                            <span>华为Mate8</span>
+                                        </a>
+                                        <a href="/gujia/718.html" title="华为nova3e" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/604d003121ea8c17405efa11d620135b.jpg" alt="华为nova3e" style="width: 40px;">
+                                            <span>华为nova3e</span>
+                                        </a>
+                                        <a href="/gujia/717.html" title="华为nova2s" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/a62d554195ee4236ce48b5922e06bdf2.jpg" alt="华为nova2s" style="width: 40px;">
+                                            <span>华为nova2s</span>
+                                        </a>
+                                        <a href="/gujia/715.html" title="华为Mate9Pro" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/b057d18c12bb2295a917abcd7e72c6ae.jpg" alt="华为Mate9Pro" style="width: 40px;">
+                                            <span>华为Mate9Pro</span>
+                                        </a>
+                                        <a href="/gujia/20751.html" title="华为 Mate 10 lite" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/9869866678ca94ab9629014079c2becc.jpg" alt="华为 Mate 10 lite" style="width: 40px;">
+                                            <span>华为 Mate 10 lite</span>
+                                        </a>
+                                        <a href="/b4/312.html" class="morephone">
+                                            <span>
+                                                更多机型
+                                                &gt;
+                                            </span>
+                                        </a>
+                                    </div>
+                         <!----></div>
+                            </li>
+                            <li>
+                                <a href="https://www.huanhuanhuishou.com/a2.html">
+                                    <span>平板回收</span>
+                                    <i><img src="~/content/Main/index_icon_contentnavul.png" alt=""></i>
+                                </a> 
+                                <div class="contentnavpanel">
+                                    <div class="contentnavpanell">
+                                        <a href="/b2/72.html" class="singleline active">华为</a>
+                                        <a href="/b2/71.html" class="singleline">小米</a>
+                                        <a href="/b2/70.html" class="singleline">三星</a>
+                                        <a href="/b2/69.html" class="singleline">苹果</a>
+                                        <a href="/b2/73.html" class="singleline">荣耀</a>
+                                        <a href="/b2/75.html" class="singleline">联想</a>
+                                        <a href="/b2/76.html" class="singleline">华硕</a>
+                                        <a href="https://www.huanhuanhuishou.com/a2.html" style="color: rgb(153, 153, 153);">更多&gt;</a>
+                                    </div>
+                                    <div class="contentnavpanelr">
+                                        <a href="/gujia/13941.html" title="华为平板 M5" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/79948067b7b97a97b68c4345e093c8131696914227.jpg" alt="华为平板 M5" style="width: 40px;">
+                                            <span>华为平板 M5</span>
+                                        </a>
+                                        <a href="/gujia/23293.html" title="华为平板 M3 诛仙手游定制版" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/bc106e26f96c00488f3165ccccc8ba33.png" alt="华为平板 M3 诛仙手游定制版" style="width: 40px;">
+                                            <span>华为平板 M3 诛仙手游定制版</span>
+                                        </a>
+                                        <a href="/gujia/23292.html" title="华为揽阅M2 8英寸" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/afcac67d58c87adddb667e30b936be9b.jpg" alt="华为揽阅M2 8英寸" style="width: 40px;">
+                                            <span>华为揽阅M2 8英寸</span>
+                                        </a>
+                                        <a href="/gujia/23294.html" title="华为平板 C5" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/b3387a218dd53b18b96e13c45a6faf89.png" alt="华为平板 C5" style="width: 40px;">
+                                            <span>华为平板 C5</span>
+                                        </a>
+                                        <a href="/gujia/13939.html" title="华为平板 M3" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/79948067b7b97a97b68c4345e093c8131505005055.jpg" alt="华为平板 M3" style="width: 40px;">
+                                            <span>华为平板 M3</span>
+                                        </a>
+                                        <a href="/gujia/13940.html" title="华为平板 M3青春版" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/79948067b7b97a97b68c4345e093c813953595189.jpg" alt="华为平板 M3青春版" style="width: 40px;">
+                                            <span>华为平板 M3青春版</span>
+                                        </a>
+                                        <a href="/gujia/13942.html" title="华为揽阅M2青春版" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/942d7b4410726ef2d83f7a6726ba9357954625113.jpg" alt="华为揽阅M2青春版" style="width: 40px;">
+                                            <span>华为揽阅M2青春版</span>
+                                        </a>
+                                        <a href="/gujia/13943.html" title="华为MediaPad (SM-M2-801W)" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/942d7b4410726ef2d83f7a6726ba93571750584711.jpg" alt="华为MediaPad (SM-M2-801W)" style="width: 40px;">
+                                            <span>华为MediaPad (SM-M2-801W)</span>
+                                        </a>
+                                        <a href="/gujia/13946.html" title="华为平板 M5 Pro" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/942d7b4410726ef2d83f7a6726ba9357172111745.jpg" alt="华为平板 M5 Pro" style="width: 40px;">
+                                            <span>华为平板 M5 Pro</span>
+                                        </a>
+                                        <a href="/gujia/13947.html" title="华为MediaPad M1" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/942d7b4410726ef2d83f7a6726ba93571179549071.jpg" alt="华为MediaPad M1" style="width: 40px;">
+                                            <span>华为MediaPad M1</span>
+                                        </a>
+                                        <a href="/gujia/13948.html" title="华为 揽阅M2" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/942d7b4410726ef2d83f7a6726ba9357867997061.jpg" alt="华为 揽阅M2" style="width: 40px;">
+                                            <span>华为 揽阅M2</span>
+                                        </a>
+                                        <a href="/gujia/13952.html" title="华为IDEOS S7 Tablet" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/9ed6645d5877e19aab1eb482721c31a1252102509.jpg" alt="华为IDEOS S7 Tablet" style="width: 40px;">
+                                            <span>华为IDEOS S7 Tablet</span>
+                                        </a>
+                                        <a href="/gujia/13957.html" title="华为MediaPad S7-301" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/9ed6645d5877e19aab1eb482721c31a1745722195.jpg" alt="华为MediaPad S7-301" style="width: 40px;">
+                                            <span>华为MediaPad S7-301</span>
+                                        </a>
+                                        <a href="/gujia/13958.html" title="华为MediaPad 7 Vogue" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/9ed6645d5877e19aab1eb482721c31a11801451513.jpg" alt="华为MediaPad 7 Vogue" style="width: 40px;">
+                                            <span>华为MediaPad 7 Vogue</span>
+                                        </a>
+                                        <a href="/gujia/13959.html" title="华为MediaPad" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/9ed6645d5877e19aab1eb482721c31a11714880679.jpg" alt="华为MediaPad" style="width: 40px;">
+                                            <span>华为MediaPad</span>
+                                        </a>
+                                        <a href="/gujia/13960.html" title="华为MediaPad S7-301u" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/9ed6645d5877e19aab1eb482721c31a11682552509.jpg" alt="华为MediaPad S7-301u" style="width: 40px;">
+                                            <span>华为MediaPad S7-301u</span>
+                                        </a>
+                                        <a href="/gujia/13961.html" title="华为MediaPad 10Link " target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/9ed6645d5877e19aab1eb482721c31a11352004123.jpg" alt="华为MediaPad 10Link " style="width: 40px;">
+                                            <span>华为MediaPad 10Link </span>
+                                        </a>
+                                        <a href="/b2/72.html" class="morephone">
+                                            <span>
+                                                更多机型
+                                                &gt;
+                                            </span>
+                                        </a>
+                                    </div>                                
+                         <!----></div>
+                            </li>
+                            <li>
+                                <a href="https://www.huanhuanhuishou.com/a1.html">
+                                    <span>笔记本回收</span>
+                                    <i><img src="~/content/Main/index_icon_contentnavul.png" alt=""></i>
+                                </a> 
+                                <div class="contentnavpanel">
+                                    <div class="contentnavpanell">
+                                        <a href="/b1/6.html" class="singleline">苹果</a>
+                                        <a href="/b1/51.html" class="singleline">小米</a>
+                                        <a href="/b1/48.html" class="singleline">华为</a>
+                                        <a href="/b1/16.html" class="singleline">三星</a>
+                                        <a href="/b1/7.html" class="singleline">ThinkPad</a>
+                                        <a href="/b1/8.html" class="singleline">华硕</a>
+                                        <a href="/b1/20.html" class="singleline active">雷神</a>
+                                        <a href="https://www.huanhuanhuishou.com/a1.html" style="color: rgb(153, 153, 153);">更多&gt;</a>
+                                    </div> 
+                                    <div class="contentnavpanelr">
+                                        <a href="/gujia/10063.html" title="雷神 Dino-X6 系列" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/368cd235da4ac37e9ef12d1362c3956d1429534513.jpg" alt="雷神 Dino-X6 系列" style="width: 40px;">
+                                            <span>雷神 Dino-X6 系列</span>
+                                        </a>
+                                        <a href="/gujia/10100.html" title="雷神 911-S6 系列" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/85704f00eaa0b87ac9727bd28d53b88a1074954567.jpg" alt="雷神 911-S6 系列" style="width: 40px;">
+                                            <span>雷神 911-S6 系列</span>
+                                        </a>
+                                        <a href="/gujia/10058.html" title="雷神 911M-M3 系列" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/368cd235da4ac37e9ef12d1362c3956d564913315.jpg" alt="雷神 911M-M3 系列" style="width: 40px;">
+                                            <span>雷神 911M-M3 系列</span>
+                                        </a>
+                                        <a href="/gujia/10057.html" title="雷神 ST-Plus 系列" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/368cd235da4ac37e9ef12d1362c3956d640040549.jpg" alt="雷神 ST-Plus 系列" style="width: 40px;">
+                                            <span>雷神 ST-Plus 系列</span>
+                                        </a>
+                                        <a href="/gujia/10061.html" title="雷神 911M-M5T 系列" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/368cd235da4ac37e9ef12d1362c3956d361045581.jpg" alt="雷神 911M-M5T 系列" style="width: 40px;">
+                                            <span>雷神 911M-M5T 系列</span>
+                                        </a>
+                                        <a href="/gujia/10097.html" title="雷神 911GT-Y6 系列" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/85704f00eaa0b87ac9727bd28d53b88a1281339893.jpg" alt="雷神 911GT-Y6 系列" style="width: 40px;">
+                                            <span>雷神 911GT-Y6 系列</span>
+                                        </a>
+                                        <a href="/gujia/10093.html" title="雷神 911M-M6b 系列" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/85704f00eaa0b87ac9727bd28d53b88a1483433869.jpg" alt="雷神 911M-M6b 系列" style="width: 40px;">
+                                            <span>雷神 911M-M6b 系列</span>
+                                        </a>
+                                        <a href="/gujia/10060.html" title="雷神 911-T5T 系列" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/368cd235da4ac37e9ef12d1362c3956d1713507447.jpg" alt="雷神 911-T5T 系列" style="width: 40px;">
+                                            <span>雷神 911-T5T 系列</span>
+                                        </a>
+                                        <a href="/gujia/10127.html" title="雷神 G17X 系列" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/c1cf0db09c82bdf9fee509523a58d78c188132785.jpg" alt="雷神 G17X 系列" style="width: 40px;">
+                                            <span>雷神 G17X 系列</span>
+                                        </a>
+                                        <a href="/gujia/10078.html" title="雷神 911-M1c 系列" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/41b290b25910b34f5dad54db37659c997609995.jpg" alt="雷神 911-M1c 系列" style="width: 40px;">
+                                            <span>雷神 911-M1c 系列</span>
+                                        </a>
+                                        <a href="/gujia/10083.html" title="雷神 911-T1a" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/41b290b25910b34f5dad54db37659c991651311481.jpg" alt="雷神 911-T1a" style="width: 40px;">
+                                            <span>雷神 911-T1a</span>
+                                        </a>
+                                        <a href="/gujia/10056.html" title="雷神 G150T 系列" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/368cd235da4ac37e9ef12d1362c3956d1826799087.jpg" alt="雷神 G150T 系列" style="width: 40px;">
+                                            <span>雷神 G150T 系列</span>
+                                        </a>
+                                        <a href="/gujia/10075.html" title="雷神 911-Targa 系列" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/41b290b25910b34f5dad54db37659c991542826153.jpg" alt="雷神 911-Targa 系列" style="width: 40px;">
+                                            <span>雷神 911-Targa 系列</span>
+                                        </a>
+                                        <a href="/gujia/10074.html" title="雷神 911M-M2a 系列" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/41b290b25910b34f5dad54db37659c9953155523.jpg" alt="雷神 911M-M2a 系列" style="width: 40px;">
+                                            <span>雷神 911M-M2a 系列</span>
+                                        </a>
+                                        <a href="/gujia/10081.html" title="雷神 911-M3 系列" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/41b290b25910b34f5dad54db37659c991437888341.jpg" alt="雷神 911-M3 系列" style="width: 40px;">
+                                            <span>雷神 911-M3 系列</span>
+                                        </a>
+                                        <a href="/gujia/22192.html" title="雷神 911黑幽灵" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/3bcde42ce3493800032b3eae933ad353.jpg" alt="雷神 911黑幽灵" style="width: 40px;">
+                                            <span>雷神 911黑幽灵</span>
+                                        </a>
+                                        <a href="/gujia/10070.html" title="雷神 911-S5Ta 系列" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/41b290b25910b34f5dad54db37659c991127709563.jpg" alt="雷神 911-S5Ta 系列" style="width: 40px;">
+                                            <span>雷神 911-S5Ta 系列</span>
+                                        </a> 
+                                        <a href="/b1/20.html" class="morephone">
+                                            <span>
+                                                更多机型
+                                                &gt;
+                                            </span>
+                                        </a>
+                                    </div>
+                          <!----></div>
+                            </li> 
+                            <li>
+                                <a href="https://www.huanhuanhuishou.com/a3.html">
+                                    <span>数码回收</span>
+                                    <i><img src="~/content/Main/index_icon_contentnavul.png" alt=""></i>
+                                </a> 
+                                <div class="contentnavpanel">
+                                    <div class="contentnavpanell">
+                                        <a href="/b3/107.html" class="singleline">尼康</a>
+                                        <a href="/b3/106.html" class="singleline">佳能</a>
+                                        <a href="/b3/110.html" class="singleline">索尼</a>
+                                        <a href="/b3/117.html" class="singleline">柯达</a>
+                                        <a href="/b3/114.html" class="singleline">徕卡</a>
+                                        <a href="/b3/108.html" class="singleline active">富士</a>
+                                        <a href="/b3/113.html" class="singleline">奥林巴斯</a>
+                                        <a href="https://www.huanhuanhuishou.com/a3.html" style="color: rgb(153, 153, 153);">更多&gt;</a>
+                                    </div>
+                                    <div class="contentnavpanelr">
+                                        <a href="/gujia/15616.html" title="富士S8100" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/5560221838b953148734e2f3a43ae15a449332955.jpg" alt="富士S8100" style="width: 40px;">
+                                            <span>富士S8100</span>
+                                        </a>
+                                        <a href="/gujia/15617.html" title="富士S3250机身" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/5560221838b953148734e2f3a43ae15a314012385.jpg" alt="富士S3250机身" style="width: 40px;">
+                                            <span>富士S3250机身</span>
+                                        </a>
+                                        <a href="/gujia/15618.html" title="富士X-E2S 机身" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/5560221838b953148734e2f3a43ae15a241173871.jpg" alt="富士X-E2S 机身" style="width: 40px;">
+                                            <span>富士X-E2S 机身</span>
+                                        </a>
+                                        <a href="/gujia/15619.html" title="富士F85" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/de7f37aaa667ee3d8e7643c84fa11ec9299479013.jpg" alt="富士F85" style="width: 40px;">
+                                            <span>富士F85</span>
+                                        </a>
+                                        <a href="/gujia/15620.html" title="富士 X10" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/de7f37aaa667ee3d8e7643c84fa11ec9942094371.jpg" alt="富士 X10" style="width: 40px;">
+                                            <span>富士 X10</span>
+                                        </a>
+                                        <a href="/gujia/15622.html" title="富士F200" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/de7f37aaa667ee3d8e7643c84fa11ec969290999.jpg" alt="富士F200" style="width: 40px;">
+                                            <span>富士F200</span>
+                                        </a>
+                                        <a href="/gujia/15623.html" title="富士S6500fd" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/de7f37aaa667ee3d8e7643c84fa11ec91133717453.jpg" alt="富士S6500fd" style="width: 40px;">
+                                            <span>富士S6500fd</span>
+                                        </a>
+                                        <a href="/gujia/15624.html" title="富士JX660" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/de7f37aaa667ee3d8e7643c84fa11ec91292039659.jpg" alt="富士JX660" style="width: 40px;">
+                                            <span>富士JX660</span>
+                                        </a>
+                                        <a href="/gujia/15625.html" title="富士S9500 (S9000）" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/de7f37aaa667ee3d8e7643c84fa11ec963626417.jpg" alt="富士S9500 (S9000）" style="width: 40px;">
+                                            <span>富士S9500 (S9000）</span>
+                                        </a>
+                                        <a href="/gujia/15626.html" title="富士F605" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/de7f37aaa667ee3d8e7643c84fa11ec91775989503.jpg" alt="富士F605" style="width: 40px;">
+                                            <span>富士F605</span>
+                                        </a>
+                                        <a href="/gujia/15627.html" title="富士F650" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/de7f37aaa667ee3d8e7643c84fa11ec9492189237.jpg" alt="富士F650" style="width: 40px;">
+                                            <span>富士F650</span>
+                                        </a>
+                                        <a href="/gujia/15628.html" title="富士S8600" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/de7f37aaa667ee3d8e7643c84fa11ec9151570483.jpg" alt="富士S8600" style="width: 40px;">
+                                            <span>富士S8600</span>
+                                        </a>
+                                        <a href="/gujia/15629.html" title="富士F60" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/de7f37aaa667ee3d8e7643c84fa11ec91254905177.jpg" alt="富士F60" style="width: 40px;">
+                                            <span>富士F60</span>
+                                        </a>
+                                        <a href="/gujia/15630.html" title="富士JZ305" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/de7f37aaa667ee3d8e7643c84fa11ec9732562055.jpg" alt="富士JZ305" style="width: 40px;">
+                                            <span>富士JZ305</span>
+                                        </a>
+                                        <a href="/gujia/15631.html" title="富士Z20" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/de7f37aaa667ee3d8e7643c84fa11ec974040093.jpg" alt="富士Z20" style="width: 40px;">
+                                            <span>富士Z20</span>
+                                        </a>
+                                        <a href="/gujia/15632.html" title="富士HS11" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/de7f37aaa667ee3d8e7643c84fa11ec9860387067.jpg" alt="富士HS11" style="width: 40px;">
+                                            <span>富士HS11</span>
+                                        </a>
+                                        <a href="/gujia/15633.html" title="富士JX255" target="_blank">
+                                            <img src="https://image.huanhuanhuishou.com/de7f37aaa667ee3d8e7643c84fa11ec91527033985.jpg" alt="富士JX255" style="width: 40px;">
+                                            <span>富士JX255</span>
+                                        </a> 
+                                        <a href="/b3/108.html" class="morephone">
+                                            <span>
+                                                更多机型
+                                                &gt;
+                                            </span>
+                                        </a>
+                                    </div> 
+                         <!----></div></li>*@
+                         </ul></div></div></div> <div class="contentbillboardswrap"><div class="appwrap"><div class="contentbillboardscen"><a href="https://www.huanhuanhuishou.com/app.html"><img src="~/content/Main/contentBillboards_img1.jpg" alt=""></a> <a href="https://www.huanhuanhuishou.com/a4.html"><p class="contentbillboardscentit"></p> <p class="contentbillboardscendes"></p> <img src="~/content/Main/contentBillboards_img2.png" alt=""></a> <a href="https://www.huanhuanhuishou.com/a1.html"><p class="contentbillboardscentit"></p> <p class="contentbillboardscendes"></p> <img src="~/content/Main/abbc977f678f4a78301a26422ca29331.png" alt=""></a> <a href="https://www.huanhuanhuishou.com/a2.html"><p class="contentbillboardscentit"></p> <p class="contentbillboardscendes"></p> <img src="~/content/Main/1bf15abd760fac8fd18473234c5e8247.png" alt=""></a></div></div></div> <div class="contentadvertisingwrap"><div class="appwrap"><div class="canpointer togglecommondiv"><a href="https://www.huanhuanhuishou.com/Activity/indexActive1"><img src="~/content/Main/advertising_icon1.png" alt="" class="togglecommondivdefe"> <img src="~/content/Main/advertising_icon1_hov.png" alt="" class="togglecommondivhove"> <p>免费评估</p></a></div> <div><img src="~/content/Main/advertising_icon0.png" alt=""></div> <div class="openVideoFn canpointer togglecommondiv"><a href="javascript:;"><img src="~/content/Main/advertising_icon2.png" alt="" class="togglecommondivdefe"> <img src="~/content/Main/advertising_icon2_hov.png" alt="" class="togglecommondivhove"> <p>AI视频定价</p></a></div> <div><img src="~/content/Main/advertising_icon0.png" alt=""></div> <div class="canpointer togglecommondiv"><a href="https://www.huanhuanhuishou.com/Activity/indexActive2"><img src="~/content/Main/advertising_icon3.png" alt="" class="togglecommondivdefe"> <img src="~/content/Main/advertising_icon3_hov.png" alt="" class="togglecommondivhove"> <p>极速打款</p></a></div> <div><img src="~/content/Main/advertising_icon0.png" alt=""></div> <div class="canpointer togglecommondiv"><a href="https://www.huanhuanhuishou.com/Activity/indexActive3"><img src="~/content/Main/advertising_icon4.png" alt="" class="togglecommondivdefe"> <img src="~/content/Main/advertising_icon4_hov.png" alt="" class="togglecommondivhove"> <p>顺丰上门，免费邮寄</p></a></div></div></div> <div class="contenttodayhotshopwrap" style="display: none;">
                 <div class="appwrap">
                     <div class="contenttodayhotshopdjs contenttodayhotshopitem" style="padding-bottom: 0px; background: rgb(241, 241, 241);">
                         <div class="contenttodayhotshopdjstit">每日高价</div> <div class="contenttodayhotshopdjstip" style="margin-top: 45px; font-size: 17px;">倒计时<br><span id="daojishidata">2019.6.6</span></div> <div id="daojishi" class="contenttodayhotshopdjstime" style="margin-top: 60px;">
@@ -1773,6 +2396,48 @@
         <script src="~/content/Main/jquery.cookie(1).js"></script>
         <script src="~/content/Main/cityjson"></script>
         <script>
+            var vm = new Vue({
+                el: "#app",
+                data: {
+                    recycletype: [],
+                    goodtype:[],
+                },
+                mounted() {
+                    this.getRecycleType();
+                },
+                methods: {   //获取回收类型
+                    getRecycleType:function () {
+                        axios.get("@Url.Action("GetRecycleType","Main")").then(
+                            (response) => {
+                                this.recycletype = response.data;
+                            }
+                        )
+                    },    //鼠标滑过获取回收类型id
+                    getType: function (id) {
+                        this.getGoodType(id)
+                    },                     
+                    getGoodType: function (id) { //根据回收类型id获取商品类型
+                        axios.get("@Url.Action("GetGoodType","Main")", { params: {id:id}}).then(
+                            (response) => {
+                                this.goodtype = response.data;
+                            }
+                        )
+                    },  //鼠标滑过获取商品类型id
+                    getGood: function (id) {
+                        alert(id);
+                        this.getGoodData(id)
+                    },  
+                    getGoodData: function (id) {   //根据商品类型id获取商品
+                        axios.get("@Url.Action("GetGoodType","Main")", { params: {id:id}}).then(
+                            (response) => {
+                                alert(JSON.stringify(response.data));
+                                this.goodtype = response.data;
+                            }
+                        )
+                    }
+                }
+            })
+
             $(function () {
                 var djs = $('#daojishi');
                 var djsday = $('#daojishidata');
@@ -1828,7 +2493,8 @@
                         prevEl: '.dayprice-button-next',
                     },
                 })
-            });</script>
+            });    
+        </script>
 
         <!--
         <script type="text/javascript">
@@ -1906,12 +2572,7 @@
                 window.history.pushState('forward', null, '#'); //在IE中必须得有这两行
                 window.history.forward(1);
               }
-
-
-
             }
-
-
           };
 
           Recode.initialize();
