@@ -13,5 +13,12 @@ namespace Bull.Recycle.IRepository.IGoodRepository
         /// </summary>
         /// <returns></returns>
         List<GoodsImages> GetGoodsList(int id);
+
+        /// <summary>
+        /// 根据商品id获取详情
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        List<GoodsImages> GetGoodDetailById(int id);
     }
 }

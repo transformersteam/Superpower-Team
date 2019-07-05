@@ -24,5 +24,20 @@ namespace Bull.Recycle.Repository.GoodRepository
                 return list;
             }
         }
+
+        /// <summary>
+        /// 根据商品id获取详情
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        public List<GoodsImages> GetGoodDetailById(int id)
+        {
+            using (var con = new SqlConnection(BaseConnection.Constr))
+            {
+                string sql = $"select Goods.Id,Goods.GoodsName,GoodImages.ImageUrl from Goods inner join GoodImages on Goods.Id=GoodImages.GoodId where Goods.Id={id}";
+                var list = con.Query<GoodsImages>(sql).AsList();
+                return list;
+            }
+        }
     }
 }

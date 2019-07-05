@@ -31,5 +31,17 @@ namespace Bull.Recycle.Api.Controllers.GoodControllers
             var list = iGoodRepository.GetGoodsList(id);
             return list;
         }
+
+        /// <summary>
+        /// 根据商品id获取详情
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        [HttpGet("GetGoodDetailById")]
+        public List<GoodsImages> GetGoodDetailById(int id)
+        {
+            var list = iGoodRepository.GetGoodDetailById(id);
+            return list;
+        }
     }
 }

@@ -62,6 +62,10 @@ namespace Bull.Recycle.Web.Controllers
         {
             var data= HelperHttpClient.GetAll("get", "Goods/GetGoodsList?id="+id, null);
             var list = JsonConvert.DeserializeObject<List<GoodsImages>>(data);
+            if (list != null)
+            {
+                RedisHelper.Set("good" + id, list);
+            }
             return Json(list);
         }
 
