@@ -5,6 +5,7 @@ using System.Text;
 using System.Data.SqlClient;
 using Dapper;
 using Bull.Recycle.IRepository.IGoodRepository;
+using Bull.Recycle.Model.Dto;
 
 namespace Bull.Recycle.Repository.GoodRepository
 {
@@ -14,12 +15,12 @@ namespace Bull.Recycle.Repository.GoodRepository
         /// 获取商品列表
         /// </summary>
         /// <returns></returns>
-        public List<Goods> GetGoodsList()
+        public List<GoodsImages> GetGoodsList(int id)
         {
             using(var con=new SqlConnection(BaseConnection.Constr))
             {
-                string sql = "select * from Goods";
-                var list =con.Query<Goods>(sql).AsList();
+                string sql = $"select Goods.Id,Goods.GoodsName,GoodImages.ImageUrl from Goods inner join GoodImages on Goods.Id=GoodImages.GoodId where Goods.GoodsTypeId={id}";
+                var list =con.Query<GoodsImages>(sql).AsList();
                 return list;
             }
         }

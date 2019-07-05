@@ -22,9 +22,9 @@ namespace Bull.Recycle.Web.Controllers
         /// 获取商品类型
         /// </summary>
         /// <returns></returns>
-        public JsonResult GetGoodType()
+        public JsonResult GetGoodType(int id)
         {
-            var goodtype = HelperHttpClient.GetAll("get", "GoodType/GetGoodsTypeList", null);
+            var goodtype = HelperHttpClient.GetAll("get", "GoodType/GetGoodsTypeList?id="+id, null);
             var list = JsonConvert.DeserializeObject<List<GoodsType>>(goodtype);
             return Json(list);
         }

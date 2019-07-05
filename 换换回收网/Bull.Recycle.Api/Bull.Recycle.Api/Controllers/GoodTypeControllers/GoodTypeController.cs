@@ -25,9 +25,9 @@ namespace Bull.Recycle.Api.Controllers.GoodTypeControllers
         /// </summary>
         /// <returns></returns>
         [HttpGet("GetGoodsTypeList")]
-        public List<GoodsType> GetGoodsTypeList()
+        public List<GoodsType> GetGoodsTypeList(int id)
         {
-            var list = iGoodTypeRepository.GetGoodsTypeList();
+            var list = iGoodTypeRepository.GetGoodsTypeList(id);
             return list;
         }
     }

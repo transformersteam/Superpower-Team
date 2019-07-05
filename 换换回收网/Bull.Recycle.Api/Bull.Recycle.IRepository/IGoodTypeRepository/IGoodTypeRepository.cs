@@ -11,6 +11,6 @@ namespace Bull.Recycle.IRepository.IGoodTypeRepository
         /// 获取商品类型列表
         /// </summary>
         /// <returns></returns>
-        List<GoodsType> GetGoodsTypeList();
+        List<GoodsType> GetGoodsTypeList(int id);
     }
 }

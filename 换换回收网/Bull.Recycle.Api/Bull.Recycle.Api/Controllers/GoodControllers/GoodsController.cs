@@ -25,9 +25,9 @@ namespace Bull.Recycle.Api.Controllers.GoodControllers
         /// </summary>
         /// <returns></returns>
         [HttpGet("GetGoodsList")]
-        public List<Goods> GetGoodsList()
+        public List<Goods> GetGoodsList(int id)
         {
-            var list = iGoodRepository.GetGoodsList();
+            var list = iGoodRepository.GetGoodsList(id);
             return list;
         }
     }

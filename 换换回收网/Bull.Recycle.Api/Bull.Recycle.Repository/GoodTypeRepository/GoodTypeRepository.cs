@@ -14,11 +14,11 @@ namespace Bull.Recycle.Repository.GoodTypeRepository
         /// 获取商品类型列表
         /// </summary>
         /// <returns></returns>
-        public List<GoodsType> GetGoodsTypeList()
+        public List<GoodsType> GetGoodsTypeList(int id)
         {
             using (var con = new SqlConnection(BaseConnection.Constr))
             {
-                string sql = "select * from GoodsType";
+                string sql = $"select * from GoodsType where RecycleTypeId={id}";
                 var list = con.Query<GoodsType>(sql).AsList();
                 return list;
             }

@@ -1,4 +1,5 @@
 ﻿using Bull.Recycle.Model;
+using Bull.Recycle.Model.Dto;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -11,6 +12,6 @@ namespace Bull.Recycle.IRepository.IGoodRepository
         /// 获取商品列表
         /// </summary>
         /// <returns></returns>
-        List<Goods> GetGoodsList();
+        List<GoodsImages> GetGoodsList(int id);
     }
 }

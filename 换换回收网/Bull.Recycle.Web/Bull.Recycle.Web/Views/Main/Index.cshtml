@@ -485,19 +485,13 @@
                     <div class="contentnavwrap">
                         <ul class="contentnavul">
                             <li v-for="(data,key,index) in recycletype">
-                                <a href="https://www.huanhuanhuishou.com/a4.html" :id=data.id onmouseover="getType(id)">
+                                <a href="https://www.huanhuanhuishou.com/a4.html" :id=data.id v-on:mouseover="getType(data.id)">
                                     <span>{{data.recycleTypeName}}回收</span>
-                                    @*<span>手机回收</span>*@
                                     <i><img src="~/content/Main/index_icon_contentnavul.png" alt=""></i>
                                 </a> 
                                 <div class="contentnavpanel">
                                     <div class="contentnavpanell">
-                                        <a href="/b4/309.html" class="singleline active">苹果</a>
-                                        <a href="/b4/310.html" class="singleline">三星</a>
-                                        <a href="/b4/312.html" class="singleline">华为</a>
-                                        <a href="/b4/311.html" class="singleline">小米</a>
-                                        <a href="/b4/316.html" class="singleline">vivo</a>
-                                        <a href="/b4/313.html" class="singleline">荣耀</a> 
+                                        <a href="/b4/309.html" class="singleline active" v-for="data in goodtype" v-on:mouseover="getGood(data.id)">{{data.goodsTypeName}}</a>
                                         <a href="https://www.huanhuanhuishou.com/a4.html" style="color: rgb(153, 153, 153);">更多&gt;</a>
                                     </div>
                                     <div class="contentnavpanelr">
@@ -2405,27 +2399,44 @@
             var vm = new Vue({
                 el: "#app",
                 data: {
-                    recycletype:[],
+                    recycletype: [],
+                    goodtype:[],
                 },
                 mounted() {
                     this.getRecycleType();
                 },
-                methods: {
+                methods: {   //获取回收类型
                     getRecycleType:function () {
                         axios.get("@Url.Action("GetRecycleType","Main")").then(
                             (response) => {
                                 this.recycletype = response.data;
                             }
                         )
+                    },    //鼠标滑过获取回收类型id
+                    getType: function (id) {
+                        this.getGoodType(id)
+                    },                     
+                    getGoodType: function (id) { //根据回收类型id获取商品类型
+                        axios.get("@Url.Action("GetGoodType","Main")", { params: {id:id}}).then(
+                            (response) => {
+                                this.goodtype = response.data;
+                            }
+                        )
+                    },  //鼠标滑过获取商品类型id
+                    getGood: function (id) {
+                        alert(id);
+                        this.getGoodData(id)
+                    },  
+                    getGoodData: function (id) {   //根据商品类型id获取商品
+                        axios.get("@Url.Action("GetGoodType","Main")", { params: {id:id}}).then(
+                            (response) => {
+                                alert(JSON.stringify(response.data));
+                                this.goodtype = response.data;
+                            }
+                        )
                     }
                 }
             })
-
-            function getType(id) {
-                alert(id);
-                //var id=$(this).attr("href")
-                //alert(id);
-            }
 
             $(function () {
                 var djs = $('#daojishi');
