@@ -1,0 +1,707 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<!-- saved from url=(0052)https://www.huanhuanhuishou.com/order/orderlist.html -->
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:bd="http://www.baidu.com/2010/xbdml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>手机回收网_专业二手手机回收|数码回收平台-换换回收官网</title>
+    <meta name="description" content="换换回收官网,专业二手手机回收网,高价品牌手机回收,平板电脑回收,笔记本回收,数码产品回收平台,本平台不议价,无套路,确保用户隐私安全,全国免费上门手机回收网!
+">
+    <meta name="keywords" content="手机回收,手机回收网,二手手机回收,平板电脑回收,笔记本回收,数码回收,二手手机">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=10">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" href="~/content/Order/swiper-3.4.2.min.css">
+    <link href="~/content/Order/swiper-3.4.2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/content/Order/jquery-ui.min.css">
+    <!-- <link rel="stylesheet" href="/public/Content/Css/libs/city-select.css"> -->
+    <link rel="stylesheet" href="~/content/Order/style.css">
+    <script charset="utf-8" src="~/content/Order/v.js"></script>
+    <script src="~/content/Order/hm.js"></script>
+    <script type="text/javascript" async="" src="~/content/Order/toutiao-track-log.js"></script>
+    <script src="~/content/Order/279490.js" defer="" async=""></script>
+    <script src="~/content/Order/push.js"></script>
+    <script src="~/content/Order/(1)hm.js"></script>
+    <script src="~/content/Order/jquery-1.12.4.js"></script>
+    <script src="~/content/Order/jquery-ui.min.js"></script>
+    <script src="~/content/Order/swiper-3.4.2.jquery.min.js"></script>
+    <script src="~/content/Order/highcharts.js"></script>
+    <script src="~/content/Order/vue.js"></script>
+    <script src="~/content/Order/citydata.min.js"></script>
+    <!-- <script src="/public/Content/Js/libs/citySelect-1.0.3.js"></script> -->
+    <script src="~/content/Order/jquery.cookie.js"></script>
+    <script src="~/content/Order/layer.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="~/content/Order/layer.css" id="layuicss-layer">
+    <script type="text/javascript">
+        // var __url__ = "https://www.huanhuanhuishou.com/";
+        var __url__ = window.location.origin + '/';
+        var  url = "/index/verify_code.html";
+        // 路径
+        var  emptyUrl = "/a4.html";
+        var  issetUrl = "/index/search_select.html";
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?7d7676f1a2d8832ca154ffdf07547182";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+        var addjsontemp='{{"\u5317\u4eac":"kf_10263_1542272937554","\u5929\u6d25":"kf_10263_1542272937554","\u6cb3\u5317":"kf_10263_1542272937554","\u5c71\u897f":"kf_10263_1542272937554","\u5185\u8499\u53e4":"kf_10263_1542272937554","\u8fbd\u5b81":"kf_10263_1542272937554","\u5409\u6797":"kf_10263_1542272937554","\u9ed1\u9f99\u6c5f":"kf_10263_1542272937554","\u4e0a\u6d77":"kf_10263_1542272854011","\u6c5f\u82cf":"kf_10263_1542272854011","\u6d59\u6c5f":"kf_10263_1542272854011","\u5b89\u5fbd":"kf_10263_1542272854011","\u798f\u5efa":"kf_10263_1542272854011","\u6c5f\u897f":"kf_10263_1542272854011","\u5c71\u4e1c":"kf_10263_1542272854011","\u6cb3\u5357":"kf_10263_1542272900355","\u6e56\u5317":"kf_10263_1542272900355","\u6e56\u5357":"kf_10263_1542272900355","\u9655\u897f":"kf_10263_1542272900355","\u7518\u8083":"kf_10263_1542272900355","\u9752\u6d77":"kf_10263_1542272900355","\u5b81\u590f":"kf_10263_1542272900355","\u65b0\u7586":"kf_10263_1542272900355","\u5e7f\u4e1c":"kf_10263_1542272702894","\u5e7f\u897f":"kf_10263_1542272702894","\u6d77\u5357":"kf_10263_1542272702894","\u897f\u5357":"kf_10263_1542272702894","\u91cd\u5e86":"kf_10263_1542272702894","\u56db\u5ddd":"kf_10263_1542272702894","\u8d35\u5dde":"kf_10263_1542272702894","\u4e91\u5357":"kf_10263_1542272702894","\u897f\u85cf":"kf_10263_1542272702894"}}';
+
+        //截取中文字符串
+        function sub(str,n){
+            var r=/[^\x00-\xff]/g;
+            if(str.replace(r,"mm").length<=n){return str;}
+            var m=Math.floor(n/2);
+            for(var i=m;i<str.length;i++){
+                if(str.substr(0,i).replace(r,"mm").length>=n){
+                    return str.substr(0,i);
+                }
+            }
+            return str;
+        }
+
+        function getareacoding() {
+            var addJson = JSON.parse(addjsontemp.substr(1,addjsontemp.length-2));
+            var getaddress='';
+            var t = $.ajax({
+                url:"/Index/getGroupIp",
+                type:'get',
+                dataType:'json',
+                async:false,
+                success:function (res) {
+                    eval(res.data);
+                    getaddress=localAddress.province;
+                }
+            })
+            var proattr=sub(getaddress,4);
+            return areacoding=(addJson[proattr]);
+
+        }
+
+        // 埋点
+        // function buriedPointFn() {
+        //     $.ajax({
+        //         url: "/Originable/logs?page_title=手机回收网_专业二手手机回收|数码回收平台-换换回收官网&page_url=" + window.location.href,
+        //         type: 'get',
+        //         success: function (res) {
+        //             // console.log(res)
+        //         }
+        //     })
+        // }
+        // // 首次立马执行，然后三秒轮询
+        // buriedPointFn();
+        // var buriedPointObj = setInterval(() => {
+        //     buriedPointFn();
+        // }, 3000);
+    </script>
+    <!--<script type="text/javascript">
+    (function(window, $) {
+        var Recode={
+            second:0,
+            minute:0,
+            hour:0,
+            stoptime:0,
+            clicknum:0,
+            url:"/Originable/logs",
+            //address:returnCitySN['cname'],
+            //ip:returnCitySN['cip'],
+            curl:"估价页",
+            self_url:window.location.href,
+            recordInterval:function (obj) {
+                obj.second++;
+                if(obj.second==60){
+                    obj.second=0;
+                    obj.minute+=1;
+                }
+                if(obj.minute==60){
+                    obj.minute=0;
+                    obj.hour+=1;
+                }
+
+                obj.stoptime=obj.hour+"时"+obj.minute+"分"+obj.second+"秒";
+
+            },
+            postRecodeData:function(url,data){
+                $.ajax({
+                    type: "POST",
+                    url: url,
+                    data: data,
+                    success: function(msg){
+
+                    }
+                });
+            },
+            makepostData:function(){
+                var thisobj=this;
+                var postdata={
+                    'page_title': window.document.title,
+                    'stay_at':thisobj.stoptime,
+                    //'second':thisobj.second,
+                    "clicknum":thisobj.clicknum,
+                    'page_url': thisobj.self_url,
+                    //'ip':thisobj.ip,
+                    //'curl':thisobj.curl
+                };
+                return postdata;
+            },
+            initialize:function () {
+
+                setInterval(this.recordInterval,1000,this);
+                var thisobj=this;
+                $(document).click(function () {
+                    thisobj.clicknum+=1;
+                });
+
+
+                //监听浏览器关闭事件
+                window.onbeforeunload=function(e){
+                    var  data=thisobj.makepostData();
+                    thisobj.postRecodeData(thisobj.url,data);
+                };
+
+                //这是监听浏览器回退事件
+                $(window).on('popstate', function () {
+                    var  data=thisobj.makepostData();
+                    thisobj.postRecodeData(thisobj.url,data);
+                });
+
+                window.document.addEventListener('visibilitychange', function() {
+                  // 页面变为不可见时触发
+                  if (document.visibilityState == 'hidden') {
+                    var  data=thisobj.makepostData();
+                    thisobj.postRecodeData(thisobj.url,data);
+                  }
+
+                  }
+                );
+
+            }
+        };
+        Recode.initialize();
+
+
+    })(window, jQuery);
+
+    </script>-->
+    <!--[if lte IE8]><script> window.location.href="http://support.dmeng.net/upgrade-your-browser.html?referrer="+encodeURIComponent(window.location.href);</script><![endif]-->
+    <script type="text/javascript" async="async" charset="utf-8" src="~/content/Order/userinfo.php"></script>
+    <script type="text/javascript" async="async" charset="utf-8" src="~/content/Order/zh_cn.js.下载" data-requiremodule="lang"></script>
+    <script type="text/javascript" async="async" charset="utf-8" src="~/content/Order/chat.in.js.下载" data-requiremodule="chatManage"></script>
+    <script type="text/javascript" async="async" charset="utf-8" src="~/content/Order/mqtt31.js.下载" data-requiremodule="MQTT"></script>
+    <script type="text/javascript" async="async" charset="utf-8" src="~/content/Order/mqtt.chat.js.下载" data-requiremodule="Connection"></script>
+</head>
+<body>
+    <div id="nTalk_post_hiddenElement" style="left: -10px; top: -10px; visibility: hidden; display: none; width: 1px; height: 1px;"></div>
+    <div class="header">
+        <div class="header-top">
+            <div class="container">
+                <ul class="header-top-nav">
+                    <li>
+                        <a href="https://www.huanhuanhuishou.com/customer/pageuser.html" class="login-after"><span class="header-meicon"><img src="~/content/Order/index_meicon.png"></span><span class="header-username" id="headerUsername">18301660323</span></a>
+                        <span class="segmenting-line"></span>
+                        <div class="spacer"></div>
+                        <div class="dropdown-menu login" id="login-more">
+                            <ul>
+                                <li><a href="https://www.huanhuanhuishou.com/customer/pageuser.html">个人中心</a></li>
+                                <li><a href="https://www.huanhuanhuishou.com/login/dologout.html">退出登录</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="https://www.huanhuanhuishou.com/order/orderlist.html">
+                            <span>我的订单</span>
+                        </a>
+                        <span class="segmenting-line"></span>
+                    </li>
+
+                    <li id="recycling-car" v-cloak="">
+                        <a>
+                            <span class="header-carticon"><i class="index_backimg recyle_img"></i></span>
+                            <span>回收车<span class="order-number">{{orderAmount}}</span>件</span>
+                            <i class="index_backimg down_img"></i>
+                            <!-- <img src="/public/Content/Images/dropdown_icon.png" alt=""> -->
+                        </a>
+                        <div class="spacer"></div>
+                        <div class="dropdown-menu header-recycling-car">
+                            <p class="recycling-car-empty">回收车中还没有商品，赶紧回收吧！</p>
+                            <div class="recycling-car-detail">
+                                <ul>
+                                    <li v-for="list in orderList">
+                                        <span class="img"><img :src="list.picture" :data-ordersn="list.orderSn" alt=""></span>
+                                        <span>{{list.goods}}</span>
+                                        <span class="price">{{list.price}}元</span>
+                                    </li>
+                                </ul>
+                                <div class="settlement row">
+                                    <div class="settlement-left">
+                                        <div>共<span class="order-number">{{orderAmount}}</span>件商品</div>
+                                        <div class="total-price"><span>{{totalPrice}}</span>元</div>
+                                    </div>
+                                    <div class="settlement-btn"><a href="https://www.huanhuanhuishou.com/recylcar/recyleindex.html">去回收车结算</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="segmenting-line"></span>
+                    </li>
+
+                    <li id="quality">
+                        <a href="https://www.huanhuanhuishou.com/index/quality.html"><span>质检流程</span></a>
+                        <span class="segmenting-line"></span>
+                    </li>
+                    <li>
+                        <div class="spacer"></div>
+                        <a href="javascript:;"><span>网站导航</span><i class="index_backimg down_img"></i></a>
+                        <!--判断下面是不是有子集-->
+                        <!--二级导航标题-->
+                        <div class="dropdown-menu">
+                            <ul>
+                                <!--判断是单页面 顶级导航-->
+                                <li>
+                                    <a>主要频道</a>
+                                    <ul>
+                                        <!--child 最后一级-->
+                                        <li>
+                                            <a href="https://www.huanhuanhuishou.com/b4.html" target="_blank">旧机回收</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.huanhuanhuishou.com/singlepage/50.html" target="_blank" rel="nofollow">关于我们</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!--判断是单页面 顶级导航-->
+                                <li>
+                                    <a>其他频道</a>
+                                    <ul>
+                                        <!--child 最后一级-->
+                                        <li>
+                                            <a href="https://www.huanhuanhuishou.com/singlepage/53.html" target="_blank" rel="nofollow">常见问题</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.huanhuanhuishou.com/enter.html" target="_blank" rel="nofollow">企业合作</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!--判断是单页面 顶级导航-->
+                                <li>
+                                    <a>相关服务</a>
+                                    <ul>
+                                        <!--child 最后一级-->
+                                        <li>
+                                            <a href="https://www.huanhuanhuishou.com/singlepage/57.html" target="_blank" rel="nofollow">服务条款</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.huanhuanhuishou.com/news/f46-1.html" target="_blank">媒体报道</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.huanhuanhuishou.com/news/g0-1.html" target="_blank">资讯热点</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="xshotphone">
+                        <a href="javascript:;"><span>服务热线：400-990-2300</span></a>
+                        <!-- <span class="segmenting-line"></span> -->
+                    </li>
+                </ul>
+                <div class="header-main-location">
+                    <i class="index_backimg city_img"></i>
+                    <div class="city-select" id="single-select-1">深圳</div>
+                    <div class="region-pop">
+                        <div class="spacer"></div>
+                        <div class="closepop">×</div>
+                        <div class="hot-city">
+                            <span>热门城市：</span>
+                            <ul><li>上海市</li><li>北京市</li><li>成都市</li><li>重庆市</li><li>东莞市</li><li>福州市</li><li>佛山市</li><li>广州市</li><li>杭州市</li><li>合肥市</li><li>昆明市</li><li>南京市</li><li>宁波市</li><li>青岛市</li><li>深圳市</li><li>苏州市</li><li>天津市</li><li>无锡市</li><li>武汉市</li><li>西安市</li><li>宜昌市</li><li>郑州市</li><li>中山市</li></ul>
+                        </div>
+                        <ul class="alphabet-list">
+                            <li class="li_selected">A</li>
+                            <li>B</li>
+                            <li>C</li>
+                            <li>D</li>
+                            <li>E</li>
+                            <li>F</li>
+                            <li>G</li>
+                            <li>H</li>
+                            <li>J</li>
+                            <li>K</li>
+                            <li>L</li>
+                            <li>M</li>
+                            <li>N</li>
+                            <li>P</li>
+                            <li>Q</li>
+                            <li>R</li>
+                            <li>S</li>
+                            <li>T</li>
+                            <li>W</li>
+                            <li>X</li>
+                            <li>Y</li>
+                            <li>Z</li>
+                        </ul>
+                        <ul class="city-list"><li>鞍山市</li><li>安阳市</li><li>安庆市</li><li>阿坝藏族羌族自治州</li><li>安顺市</li><li>阿勒泰地区</li><li>阿克苏地区</li><li>安康市</li><li>阿里地区</li><li>阿拉尔市</li><li>阿拉善盟</li><li>阿拉山口市</li></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-main">
+            <div class="container">
+                <div class="header-main-logo">
+                    <a href="https://www.huanhuanhuishou.com/">
+                        <img src="~/content/Order/index_logoa.png" alt=""><img src="~/content/Order/index_logob.png" style="margin-left: 15px">
+                    </a>
+                    <span class="logo-displaynone" style="position: absolute;left: -99999px;"><img src="~/content/Order/logo_displaynone.jpg"></span>
+                </div>
+                <div class="header-main-right" style="padding-bottom: 25px;">
+                    <div class="header-main-search">
+                        <div class="input-form">
+                            <input type="text" placeholder="请输入搜索的机型" class="seach" v-model="searchDetail" v-on:click="getHot($event)" v-on:keyup="searchHot($event)">
+                            <div class="search-icon" v-on:click="search_goods()">
+                                <i class="index_backimg search_img"></i>
+                            </div>
+                            <div class="dropdown" style="display: none;">
+                                <ul class="hot_content">
+                                    <li v-for="list in hotList">
+                                        <a :href="list.url">{{list.goods}}</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- <div class="hotsearch row">
+                                <span>热门搜索 :</span>
+                                <ul class="row">
+                                    <li>
+                                        <a href="/b4/309.html">苹果</a>
+                                    </li>
+                                    <li>
+                                        <a href="/b4/312.html">华为</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="/b4/311.html">小米</a>
+                                    </li>
+                                    <li>
+                                        <a href="/b4/315.html">oppo</a>
+                                    </li>
+                                </ul>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container">
+                <div class="header-bottom-nav">
+                    <ul>
+                        <li class="sign active">
+                            <a href="https://www.huanhuanhuishou.com/">旧机回收</a>
+                        </li>
+                        <li>
+                            <a class="aa" href="https://www.huanhuanhuishou.com/app.html" target="_blank" style="width: 169px">
+                                下载APP<span class="caret"></span>
+                                <i class="dropdown-tits"></i>
+                            </a>
+                            <div class="dropdown" onclick="app();return false;" style="cursor: pointer;">
+                                <div class="code"></div>
+                                <p>扫码下载APP</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="aa" href="javascript:;" style="width: 187px">换换公众号<span class="caret"></span><i class="dropdown-tits youli"></i></a>
+                            <div class="dropdown public">
+                                <div class="code"></div>
+                                <p>扫码关注公众号</p>
+                            </div>
+                        </li>
+                        <li><a class="aa" href="https://www.huanhuanhuishou.com/enter.html">企业回收</a></li>
+                        <!--      <li><a class="aa" href=http://bbs.huanhuanhuishou.com target="_blank">论坛</a></li>-->
+                        <li><a class="aa" href="https://www.huanhuanhuishou.com/index/pageLove" target="_blank">公益</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-fixed">
+        <div class="container">
+            <div class="header-main-logo">
+                <a href="https://www.huanhuanhuishou.com/">
+                    <img src="~/content/Order/702c11ca64266cd71353038f671bbc1d.png" alt="">
+                </a>
+            </div>
+            <div class="header-bottom-nav">
+                <ul>
+                    <li>
+                        <!--企业回收屏蔽-->
+                        <a href="https://www.huanhuanhuishou.com/enter.html">企业回收</a>
+                    </li>
+                    <!-- <li><a href="javascript:;">公众号<span class="caret"></span><img src="/public//Content/Images/navDescriptePic_2.png" style="width: 68px;height:24px;max-width: none" alt=""></a>
+                        <div class="dropdown public">
+                            <div class="code"></div>
+                            <p>扫码关注公众号</p>
+                        </div>
+                    </li>-->
+                    <!-- <li><a href= http://bbs.huanhuanhuishou.com target="_blank">论坛</a></li>-->
+                </ul>
+            </div>
+            <div class="header-main-right">
+                <div class="header-main-search header-main-search2">
+                    <div class="input-form">
+                        <input type="text" placeholder="请输入搜索的机型" class="seach" v-model="searchDetail" v-on:click="getHot($event)" v-on:keyup="searchHot($event)">
+                        <div class="search-icon" v-on:click="search_goods()">
+                            <i class="index_backimg search_img"></i>
+                        </div>
+                        <div class="dropdown" style="display: none;">
+                            <ul class="hot_content">
+                                <li v-for="list in hotList">
+                                    <a :href="list.url">{{list.goods}}</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="login-frame">
+        <div class="login-frame-header">
+            <span><img src="~/content/Order/dialogClose.png" class="index-close"></span>
+        </div>
+        <!-- <iframe src="../login/index.html"></iframe> -->
+        <div class="login-midd">
+            <div class="logo"><img src="~/content/Order/logo.png" alt=""></div>
+            <div class="login">
+                <p>手机验证码登录</p>
+                <form action="https://www.huanhuanhuishou.com/login/login.html" method="post">
+                    <div class="phone-num same">
+                        <input type="tel" class="phone other" name="phone" maxlength="11" placeholder="请输入手机号">
+                        <span class="error_text errorphone"></span>
+                    </div>
+                    <div class="get-code" id="sendmsg">
+                        <input type="button" class="logintrue" value="获取验证码">
+                    </div>
+                    <span id="yzmcode" iscode="0" style="display: none"></span>
+                    <!-- php -->
+                    <div class="phone-num same">
+                        <input type="text" class="phone other" name="yzm" id="yzm" maxlength="11" placeholder="请输入验证码">
+                    </div>
+                    <img src="~/content/Order/verify_code.html" id="imgs" style="width: 150px;height: 50px" alt="点击更换" title="点击更换" onclick="javascript:this.src=this.src+&#39;?time=&#39;+Math.random()">
+                    <!-- /php -->
+                    <div class="input-code same">
+                        <input type="text" class="code other" id="verifycode" name="code" maxlength="6" placeholder="请输入验证码">
+                        <span class="error_text errorcode"></span>
+                    </div>
+
+                </form>
+                <input type="button" onclick="submitForm()" value="快速登录" class="sub">
+
+            </div>
+        </div>
+    </div>
+    <div class="mask"></div>
+    <script>function app(){
+        window.location.href = "/app.html";
+    }</script>
+    <link href="~/content/Order/orderdetail.css" rel="stylesheet">
+    <main id="orderDetail">
+        <div class="wallet-box">
+            <div class="wallet-box-in">
+                <div class="wallet-nav"><a href="https://www.huanhuanhuishou.com/">首页</a>&gt;<a href="https://www.huanhuanhuishou.com/customer/pageuser.html">个人中心</a>&gt;<a href="https://www.huanhuanhuishou.com/order/orderlist.html">我的订单</a></div> <div class="wallet-main">
+                    <div class="wallet-main-l"><div class="wallet-main-l-user"><p><img src="~/content/Order/61f1992f0f9b26e7151d60a2a709054b.png"></p> <p>欢迎您<span>18301660323</span></p></div> <div class="wallet-main-l-box"><div class="wallet-main-l-dingdan"><p><img src="~/content/Order/wenjian.png">订单中心</p> <p><a href="https://www.huanhuanhuishou.com/order/orderlist.html">我的订单</a></p></div> <div class="wallet-main-l-qianbao"><p><img src="~/content/Order/money.png">我的钱包 </p> <p><a href="https://www.huanhuanhuishou.com/wallet/pagewallet.html">账户余额</a></p> <p><a href="https://www.huanhuanhuishou.com/wallet/pagecoupon.html">优惠券</a></p> <p><a href="https://www.huanhuanhuishou.com/wallet/pagecommonproblem.html">常见问题</a></p></div> <div class="wallet-main-l-me"><p><img src="~/content/Order/me.png">账户信息</p> <p><a href="https://www.huanhuanhuishou.com/customer/pageuser.html">个人信息 </a></p></div> <div class="wallet-main-l-address"><p><img src="~/content/Order/address.png">换换回收邮寄地址</p> <p><a>深圳市福田区深南大道7006号万科富春东方大厦18楼回收组（收）</a></p> <p>回收组:0755-83227437</p></div></div></div> <div class="wallet-main-r">
+                        <div class="orderdetail-box">
+                            <div class="orderdetail-title heightgao">
+                                订单详情
+                            </div> <div class="orderdetail-main"><div class="orderdetail-main-nav"><ul><li style="box-sizing: border-box; padding-left: 90px;">商品信息</li> <li style="box-sizing: border-box; padding-left: 90px;">订单金额</li> <li style="box-sizing: border-box; padding-left: 90px;">运费差价</li> <li style="box-sizing: border-box; padding-left: 70px;">状态</li> <li style="box-sizing: border-box; padding-left: 10px;">操作</li></ul></div> <div class="orderdetail-main-detail"><ul></ul></div></div>
+                        </div> <div class="orderdetail-main-total"><div class="orderdetail-main-total-title"><div class="orderdetail-main-total-title-l">取消订单</div> <div class="orderdetail-main-total-title-r">X</div></div> <div class="orderdetail-main-total-main"><p>请选择取消订单的原因，以便我们更好的为您提供服务</p> <ul><li><input type="checkbox"><label>担心交易存在风险</label></li> <li><input type="checkbox"><label>留着自己用</label></li> <li><input type="checkbox"><label>卖给其他回收商</label></li> <li><input type="checkbox"><label>测试体验</label></li> <li><input type="checkbox"><label>价格不符合预期</label></li> <li><input type="checkbox"><label>订单重复</label></li> <li><input type="checkbox"><label>下单错误</label></li> <li><input type="checkbox"><label>其他原因</label></li></ul> <div class="orderdetail-main-total-main-box"><button class="orderdetail-main-total-main-button">确定</button></div></div></div>
+                    </div>
+                </div>
+            </div>
+        </div> <div class="orderdetail-mask"></div>
+    </main>
+    <div class="orderdetail-mask"></div>
+    <script src="~/content/Order/common.js"></script>
+    <script src="~/content/Order/orderList.js"></script>
+    <div class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-describe">
+                    <div class="footer-describe-image">
+                        <i class="index_backimg describeimg_a"></i>
+                    </div>
+                    <span><span class="top">专业</span><span class="bot">环保回收 横跨全球</span></span>
+                </div>
+                <div class="footer-describe">
+                    <div class="footer-describe-image">
+                        <i class="index_backimg describeimg_b"></i>
+                    </div>
+                    <span><span class="top">高价</span><span class="bot">实现旧机 最高价值</span></span>
+                </div>
+                <div class="footer-describe">
+                    <div class="footer-describe-image">
+                        <i class="index_backimg describeimg_c"></i>
+                    </div>
+                    <span><span class="top">安全</span><span class="bot">隐私清除 卖机无忧</span></span>
+                </div>
+                <div class="footer-describe">
+                    <div class="footer-describe-image">
+                        <i class="index_backimg describeimg_d"></i>
+                    </div>
+                    <span><span class="top">快速</span><span class="bot">一键估价 闪电打款</span></span>
+                </div>
+            </div>
+        </div>
+        <div class="footer-main">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-link-box">
+                        <ul>
+                            <li>交易方式</li>
+                            <li><a href="https://www.huanhuanhuishou.com/singlepage/47.html" target="_blank" rel="nofollow">快递回收</a></li>
+                            <li><a href="https://www.huanhuanhuishou.com/b4.html" target="_blank" rel="nofollow">旧机回收</a></li>
+                            <!--单页面-->
+                        </ul>
+                        <ul>
+                            <li>质检说明</li>
+                            <li><a href="https://www.huanhuanhuishou.com/singlepage/48.html" target="_blank">质检名词解释</a></li>
+                            <li><a href="https://www.huanhuanhuishou.com/index/quality.html" target="_blank" rel="nofollow">回收检测流程</a></li>
+                            <!--单页面-->
+                        </ul>
+                        <ul>
+                            <li>帮助中心</li>
+                            <li><a href="https://www.huanhuanhuishou.com/singlepage/53.html" target="_blank" rel="nofollow">常见问题</a></li>
+                            <li><a href="https://www.huanhuanhuishou.com/singlepage/57.html" target="_blank" rel="nofollow">服务条款</a></li>
+                        </ul>
+                        <ul>
+                            <li>关于我们</li>
+                            <li><a href="https://www.huanhuanhuishou.com/singlepage/50.html" target="_blank" rel="nofollow">公司简介</a></li>
+                            <li><a href="https://www.huanhuanhuishou.com/enter.html" target="_blank" rel="nofollow">企业合作</a></li>
+                            <!--单页面-->
+                            <li><a href="https://www.huanhuanhuishou.com/singlepage/70.html" target="_blank" rel="nofollow">联系我们</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-code-box">
+                        <div class="app-box l">
+                            <span><img src="~/content/Order/get_app_erweima.png" alt="换换回收App"></span>
+                            <h4>换换回收App</h4>
+                        </div>
+                        <div class="wx-box l">
+                            <span><img src="~/content/Order/footerceqrcode_img1.png" alt="换换回收公众号"></span>
+                            <h4>换换回收公众号</h4>
+                        </div>
+                    </div>
+                    <div class="footer-contactUs">
+                        <h4>咨询热线</h4>
+                        <div class="contact-way row">
+                            <div class="l">
+                                <p class="tel"><img src="~/content/Order/index_400.png"></p>
+                                <p class="work-time">周一至周日 09：00-20：00</p>
+                                <!-- <p class="work-time">周六至周日 10：00-21：00</p> -->
+                            </div>
+                            <!-- <button class="sbp" ><a><img src="/public//Content/Images/footerddianhua.png" alt=""><span>在线客服</span></a></button> -->
+                        </div>
+                        <div class="addres">深圳市福田区深南大道7006号万科富春东方大厦18楼                         <br>回收组:0755-23487477</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-line-more">
+                    ©2016-2019深圳市换换数码有限公司版权所有，并保留所有权利  <a href="http://www.miitbeian.gov.cn/" rel="nofollow" target="_blank"><p>  粤ICP备16126656号</p></a>
+                </div>
+                <div class="footer-img-box">
+                    <a href="http://www.gsxt.gov.cn/" target="_blank" rel="nofollow"><img src="~/content/Order/a45977e1d1742c89b08ba6e7fb29571b.png" alt="备案"></a>
+                    <a href="http://www.szwljb.gov.cn/" target="_blank" rel="nofollow"><img src="~/content/Order/187ff475b7786733b43669c3dc18f727.png" alt="深圳市网络警察"></a>
+                    <a href="http://www.miitbeian.gov.cn/publish/query/indexFirst.action" target="_blank" rel="nofollow"><img src="~/content/Order/6cadb255ee9bea54b9054774bfc9e86f.png" alt="备案"></a>
+                    <a href="https://www.alipay.com/" target="_blank" rel="nofollow"><img src="~/content/Order/56d901d7bd4c02743694bd4cf92a76fc.png" alt="支付宝"></a>
+                    <a href="https://www.12321.cn/" target="_blank" rel="nofollow"><img src="~/content/Order/ecc6ebc0ed6599c91754632e04d00fbf.png" alt="12321网络不良与垃圾信息举报受理中心"></a>
+
+
+                </div>
+                <div class="footer-img-box" style="margin-top: 15px;">
+                    <!-- <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1275506895'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s5.cnzz.com/z_stat.php%3Fid%3D1275506895%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script> -->
+                    <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1275505755'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s96.cnzz.com/z_stat.php%3Fid%3D1275505755%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script><span id="cnzz_stat_icon_1275505755"><a href="https://www.cnzz.com/stat/website.php?web_id=1275505755" target="_blank" title="站长统计"><img border="0" hspace="0" vspace="0" src="~/content/Order/pic.gif"></a></span>
+                    <script src="~/content/Order/z_stat.php" type="text/javascript"></script>
+                    <script src="~/content/Order/core.php" charset="utf-8" type="text/javascript"></script>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 右下导航 -->
+    <!-- <div id="fiexd-box">
+        <a class="fiexd-box-content fix_back_a">
+            <i class="index_backimg contentimg_c fiexd-box-content-img"></i>
+            <div class="fiexd-box-detail">
+                <div class="tri"></div>
+                <img src="https://image.huanhuanhuishou.com/4738763d06c3f2cde5440055832c129d.png">
+                <p>关注小程序</p>
+            </div>
+            <i class="index_backimg panda_img"></i>
+        </a>
+
+        <a class="fiexd-box-content fix_back_b sbp">
+            <i class="index_backimg contentimg_b"></i>
+        </a>
+
+        <a class="fiexd-box-content fix_back_a">
+            <i class="index_backimg contentimg_a"></i>
+            <div class="fiexd-box-detail fiexd-box-phone">
+                <div class="tri"></div>
+                <p class="phone-number"> 400-990-2300</p>
+                <p class="text-left">请拨打电话</p>
+            </div>
+        </a>
+
+        <a class="goTop fix_back_c" id="goTop">
+            <i class="index_backimg contentimg_d"></i>
+        </a>
+    </div> -->
+    <div id="fiexd-box" class="fiexd-box-v2">
+        <a class="qrcodev2" href="javascript:;">
+            <i class="bgi bgi1"></i>
+            <div class="fiexd-box-detail">
+                <div class="tri"></div>
+                <img src="~/content/Order/footerceqrcode_img1.png">
+                <p>关注公众号</p>
+            </div>
+        </a>
+        <a class="qrcodev2" href="javascript:;">
+            <i class="bgi bgi2"></i>
+            <div class="fiexd-box-detail fiexd-box-phone">
+                <div class="tri"></div>
+                <p class="phone-number"> 400-990-2300</p>
+                <p class="text-left">请拨打电话</p>
+            </div>
+        </a>
+        <a class="sbp" href="javascript:;">
+            <i class="bgi bgi3"></i>
+        </a>
+        <a class="live" id="goTop" href="javascript:;" style="height: 0px; padding: 0px;">
+            <i class="bgi bgi4" style="height: 0px;"></i>
+        </a>
+    </div>
+    <script>var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?a0b8ac1d7f1da3cf42597661fef34606";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();</script>
+
+    <script type="text/javascript">$('.sbp').click(function () {
+        var ipaddress=getareacoding();
+        NTKF.im_openInPageChat(ipaddress);
+    });
+    //console.log($(".sbp"));</script>
+    <!--商务通统计代码-->
+    <!-- <script language="javascript" src="https://pkt.zoosnet.net/JS/LsJS.aspx?siteid=PKT98949281&float=1&lng=cn"></script> -->
+    <iframe name="594865" height="0" width="0" src="~/content/Order/mv.html" style="display: none;"></iframe>
+</body>
+<iframe id="__ToutiaoJSBridgeIframe_SetResult" style="display: none;" src="~/content/Order/saved_resource.html"></iframe>
+<iframe id="__ToutiaoJSBridgeIframe" style="display: none;" src="~/content/Order/saved_resource(1).html"></iframe>
+</html>
