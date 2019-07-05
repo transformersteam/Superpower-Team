@@ -1034,7 +1034,7 @@
     font-size: 16px;
 }
 
-.tx-in-show-main-center ul li P:nth-child(1) {
+.tx-in-show-main-center ul li P:nth-child~/content/Coupon/ {
     color: #03ad64;
 }
 
