@@ -32,13 +32,5 @@ namespace Bull.Recycle.Web.Controllers
         {
             return View();
         }
-        /// <summary>
-        /// 常见问题
-        /// </summary>
-        /// <returns></returns>
-        public IActionResult Problem()
-        {
-            return View();
-        }
     }
 }
