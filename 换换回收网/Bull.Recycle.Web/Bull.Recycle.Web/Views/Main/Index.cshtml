@@ -495,12 +495,12 @@
                                         <a href="https://www.huanhuanhuishou.com/a4.html" style="color: rgb(153, 153, 153);">更多&gt;</a>
                                     </div>
                                     <div class="contentnavpanelr">
-                                        <a href="/gujia/23311.html" title="苹果 iPhone XS Max" target="_blank">
-                                            <img src="https://image.huanhuanhuishou.com/7cb1c9186673dce978848925626a7dd6.png" alt="苹果 iPhone XS Max" style="width: 40px;">
-                                            <span>苹果 iPhone XS Max</span>
+                                        <a href="/gujia/23311.html" title="苹果 iPhone XS Max" target="_blank" v-for="data in good">
+                                            <img src="http://169.254.183.63+'data.imageUrl'" alt="苹果 iPhone XS Max" style="width: 40px;">
+                                            <span>{{data.goodsName}}</span>
                                         </a>
-                                        <a href="/gujia/52.html" title="苹果 iPhone 6S" target="_blank">
-                                            <img src="https://image.huanhuanhuishou.com/8ab63d34885befad0a20dda7d3ea7a6e.png" alt="苹果 iPhone 6S" style="width: 40px;">
+                                        @*<a href="/gujia/52.html" title="苹果 iPhone 6S" target="_blank">
+                                            <img src="https://127.0.0.1/126338962e9ba688c445c56ede5584c9705383505.jpg" alt="苹果 iPhone 6S" style="width: 40px;">
                                             <span>苹果 iPhone 6S</span>
                                         </a>
                                         <a href="/gujia/47.html" title="苹果 iPhone X" target="_blank">
@@ -568,7 +568,7 @@
                                                 更多机型
                                                 &gt;
                                             </span>
-                                        </a>
+                                        </a>*@
                                     </div> 
                          <!----></div>
                             </li> 
@@ -2399,8 +2399,9 @@
             var vm = new Vue({
                 el: "#app",
                 data: {
-                    recycletype: [],
-                    goodtype:[],
+                    recycletype: [],   //回收类型
+                    goodtype: [],       //商品类型
+                    good:[],            //商品
                 },
                 mounted() {
                     this.getRecycleType();
@@ -2412,26 +2413,25 @@
                                 this.recycletype = response.data;
                             }
                         )
-                    },    //鼠标滑过获取回收类型id
-                    getType: function (id) {
+                    },   
+                    getType: function (id) {      //鼠标滑过获取回收类型id
                         this.getGoodType(id)
                     },                     
-                    getGoodType: function (id) { //根据回收类型id获取商品类型
+                    getGoodType: function (id) {     //根据回收类型id获取商品类型
                         axios.get("@Url.Action("GetGoodType","Main")", { params: {id:id}}).then(
                             (response) => {
                                 this.goodtype = response.data;
                             }
                         )
-                    },  //鼠标滑过获取商品类型id
-                    getGood: function (id) {
-                        alert(id);
+                    },  
+                    getGood: function (id) {  //鼠标滑过获取商品类型id
                         this.getGoodData(id)
                     },  
                     getGoodData: function (id) {   //根据商品类型id获取商品
-                        axios.get("@Url.Action("GetGoodType","Main")", { params: {id:id}}).then(
+                        axios.get("@Url.Action("GetGoods","Main")", { params: {id:id}}).then(
                             (response) => {
                                 alert(JSON.stringify(response.data));
-                                this.goodtype = response.data;
+                                this.good = response.data;
                             }
                         )
                     }

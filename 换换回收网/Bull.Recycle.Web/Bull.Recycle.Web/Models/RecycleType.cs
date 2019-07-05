@@ -6,7 +6,7 @@ using System.Text;
 namespace Bull.Recycle.Web
 {
     /// <summary>
-    /// 回收类型id
+    /// 回收类型
     /// </summary>
     public class RecycleType
     {

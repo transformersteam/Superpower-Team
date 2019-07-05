@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Bull.Recycle.IRepository.IGoodRepository;
 using Bull.Recycle.Model;
+using Bull.Recycle.Model.Dto;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -25,7 +26,7 @@ namespace Bull.Recycle.Api.Controllers.GoodControllers
         /// </summary>
         /// <returns></returns>
         [HttpGet("GetGoodsList")]
-        public List<Goods> GetGoodsList(int id)
+        public List<GoodsImages> GetGoodsList(int id)
         {
             var list = iGoodRepository.GetGoodsList(id);
             return list;
